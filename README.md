@@ -1,10 +1,5 @@
 # projects
 MBDTECH LTD Projects
-# MBDTECH LTD Projects
-
-## MBDTECH Smart
-
-[Visit Project](https://www.mbdtechltd.com/Smart)
-### MBDTECH Smart
+# MBDTECH LTD Project
 
 [Visit Project](https://www.mbdtechltd.com/)
