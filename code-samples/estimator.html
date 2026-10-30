@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Project Cost Estimator — MBDTECH LTD</title>
+<meta name="description" content="Get a quick estimate for your mobile app, website, or SaaS project. MBDTECH LTD budget calculator.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blue:#1E5AA8;--blue2:#2563EB;--blue3:#3B82F6;--blue-light:#EAF2FF;--blue-mid:#C5DEFF;
+  --dark:#0F172A;--mid:#334155;--muted:#64748B;--border:#E2E8F0;
+  --white:#fff;--gray:#F1F5F9;--gray2:#F8FAFC;--green:#22c55e;
+  --shadow:0 4px 24px rgba(30,90,168,.08);--shadow-lg:0 20px 60px rgba(30,90,168,.18);
+  --r:12px;--r2:18px;--ff:'Outfit',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:var(--ff);background:var(--gray2);color:var(--dark);}
+a{text-decoration:none;color:inherit;}
+button{font-family:var(--ff);}
+
+.page-header{background:linear-gradient(135deg,var(--blue),var(--blue2));padding:64px 28px 52px;text-align:center;color:#fff;}
+.page-header h1{font-size:clamp(28px,4vw,48px);font-weight:800;letter-spacing:-1.5px;margin-bottom:12px;}
+.page-header p{font-size:16px;color:rgba(255,255,255,.78);max-width:540px;margin:0 auto;}
+
+.estimator-wrap{max-width:900px;margin:0 auto;padding:40px 24px 80px;}
+
+/* STEP CARDS */
+.est-card{background:#fff;border:1.5px solid var(--border);border-radius:var(--r2);padding:28px;margin-bottom:18px;}
+.est-card h3{font-size:17px;font-weight:700;color:var(--dark);margin-bottom:4px;}
+.est-card p{font-size:13.5px;color:var(--muted);margin-bottom:20px;}
+
+/* SCREEN SLIDER */
+.slider-wrap{display:flex;align-items:center;gap:16px;}
+.slider-wrap input[type=range]{flex:1;accent-color:var(--blue);height:6px;}
+.slider-val{font-family:var(--ff);font-size:22px;font-weight:800;color:var(--blue);min-width:32px;text-align:center;}
+
+/* FEATURE TOGGLES */
+.feat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;}
+.feat-item{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:12px 16px;border:1.5px solid var(--border);border-radius:10px;
+  cursor:pointer;transition:all .18s;background:#fff;
+}
+.feat-item:hover{border-color:var(--blue-mid);}
+.feat-item.on{border-color:var(--blue);background:var(--blue-light);}
+.feat-name{font-size:14px;font-weight:500;color:var(--dark);}
+.feat-add{font-size:12px;color:var(--blue);font-weight:600;}
+.feat-item.on .feat-add{color:var(--blue2);}
+.toggle{width:36px;height:20px;background:var(--border);border-radius:100px;position:relative;transition:background .2s;flex-shrink:0;}
+.toggle::after{content:'';position:absolute;width:14px;height:14px;background:#fff;border-radius:50%;top:3px;left:3px;transition:left .2s;}
+.feat-item.on .toggle{background:var(--blue);}
+.feat-item.on .toggle::after{left:19px;}
+
+/* TIMELINE PILLS */
+.timeline-opts{display:flex;gap:10px;flex-wrap:wrap;}
+.tl-opt{padding:10px 20px;border-radius:100px;border:1.5px solid var(--border);background:#fff;font-size:14px;font-weight:500;cursor:pointer;transition:all .18s;color:var(--dark);}
+.tl-opt:hover{border-color:var(--blue-mid);}
+.tl-opt.sel{background:var(--blue);color:#fff;border-color:var(--blue);}
+
+/* RESULT CARD */
+.result-card{
+  background:linear-gradient(135deg,var(--blue),var(--blue2));
+  border-radius:var(--r2);padding:32px 36px;color:#fff;
+  position:sticky;bottom:20px;margin-top:24px;
+  box-shadow:var(--shadow-lg);
+}
+.result-range{font-family:var(--ff);font-size:42px;font-weight:900;letter-spacing:-2px;margin-bottom:8px;}
+.result-note{font-size:13.5px;color:rgba(255,255,255,.7);margin-bottom:20px;line-height:1.6;}
+.result-breakdown{display:flex;flex-direction:column;gap:7px;margin-bottom:22px;}
+.rb-line{display:flex;justify-content:space-between;font-size:13.5px;}
+.rb-label{color:rgba(255,255,255,.75);}
+.rb-val{font-weight:600;}
+.cta-btns{display:flex;gap:10px;flex-wrap:wrap;}
+.cta-btn{padding:12px 24px;border-radius:10px;font-family:var(--ff);font-weight:700;font-size:14px;cursor:pointer;border:none;transition:all .2s;}
+.cta-primary{background:#fff;color:var(--blue);}
+.cta-primary:hover{background:var(--blue-light);}
+.cta-secondary{background:rgba(255,255,255,.15);color:#fff;border:1px solid rgba(255,255,255,.25);}
+.cta-secondary:hover{background:rgba(255,255,255,.22);}
+
+/* DISCLAIMER */
+.disclaimer{margin-top:20px;padding:16px 18px;background:#fff;border:1px solid var(--border);border-radius:var(--r);font-size:13px;color:var(--muted);border-left:3px solid var(--blue);}
+
+@media(max-width:600px){
+  .estimator-wrap{padding:24px 16px 60px;}
+  .result-card{padding:24px;}
+  .result-range{font-size:30px;}
+  .feat-grid{grid-template-columns:1fr;}
+  .page-header{padding:44px 18px 36px;}
+}
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <a href="index.html" style="display:inline-flex;align-items:center;gap:6px;font-size:13px;color:rgba(255,255,255,.7);margin-bottom:20px;">← Back to MBDTECH LTD</a>
+  <h1>Project Cost Estimator</h1>
+  <p>Get a rough idea of your investment. Adjust the settings below for an instant estimate range.</p>
+</div>
+
+<div class="estimator-wrap">
+
+  <!-- STEP 1: SCREENS -->
+  <div class="est-card">
+    <h3>How many screens or pages does your project have?</h3>
+    <p>More screens = more design and development time. Count each unique view.</p>
+    <div class="slider-wrap">
+      <span style="font-size:13px;color:var(--muted);">1</span>
+      <input type="range" id="screenSlider" min="1" max="30" value="5" oninput="updateEstimate()">
+      <span style="font-size:13px;color:var(--muted);">30+</span>
+      <div class="slider-val" id="screenVal">5</div>
+    </div>
+    <div id="screenTier" style="margin-top:12px;font-size:13.5px;color:var(--muted);"></div>
+  </div>
+
+  <!-- STEP 2: PLATFORM -->
+  <div class="est-card">
+    <h3>Which platform(s)?</h3>
+    <p>Each additional platform increases development time.</p>
+    <div class="timeline-opts">
+      <div class="tl-opt" id="plt-web" onclick="selectPlatform('web')">Web / Website</div>
+      <div class="tl-opt sel" id="plt-app" onclick="selectPlatform('app')">Mobile App (iOS &amp; Android)</div>
+      <div class="tl-opt" id="plt-both" onclick="selectPlatform('both')">Web + Mobile App</div>
+      <div class="tl-opt" id="plt-saas" onclick="selectPlatform('saas')">SaaS Platform</div>
+    </div>
+  </div>
+
+  <!-- STEP 3: FEATURES -->
+  <div class="est-card">
+    <h3>Which features do you need?</h3>
+    <p>Select all that apply. Each adds to the base estimate.</p>
+    <div class="feat-grid" id="featGrid">
+      <div class="feat-item" data-cost="300" onclick="toggleFeat(this)"><div><div class="feat-name">Authentication / Login</div><div class="feat-add">+£300</div></div><div class="toggle"></div></div>
+      <div class="feat-item" data-cost="500" onclick="toggleFeat(this)"><div><div class="feat-name">Admin Panel</div><div class="feat-add">+£500</div></div><div class="toggle"></div></div>
+      <div class="feat-item" data-cost="600" onclick="toggleFeat(this)"><div><div class="feat-name">Payment Gateway</div><div class="feat-add">+£600</div></div><div class="toggle"></div></div>
+      <div class="feat-item" data-cost="400" onclick="toggleFeat(this)"><div><div class="feat-name">API Integration</div><div class="feat-add">+£400</div></div><div class="toggle"></div></div>
+      <div class="feat-item" data-cost="700" onclick="toggleFeat(this)"><div><div class="feat-name">AI Features</div><div class="feat-add">+£700</div></div><div class="toggle"></div></div>
+      <div class="feat-item" data-cost="400" onclick="toggleFeat(this)"><div><div class="feat-name">Analytics Dashboard</div><div class="feat-add">+£400</div></div><div class="toggle"></div></div>
+      <div class="feat-item" data-cost="350" onclick="toggleFeat(this)"><div><div class="feat-name">Push Notifications</div><div class="feat-add">+£350</div></div><div class="toggle"></div></div>
+      <div class="feat-item" data-cost="450" onclick="toggleFeat(this)"><div><div class="feat-name">Maps &amp; Location</div><div class="feat-add">+£450</div></div><div class="toggle"></div></div>
+      <div class="feat-item" data-cost="500" onclick="toggleFeat(this)"><div><div class="feat-name">In-App Chat</div><div class="feat-add">+£500</div></div><div class="toggle"></div></div>
+      <div class="feat-item" data-cost="800" onclick="toggleFeat(this)"><div><div class="feat-name">Database / Backend</div><div class="feat-add">+£800</div></div><div class="toggle"></div></div>
+      <div class="feat-item" data-cost="600" onclick="toggleFeat(this)"><div><div class="feat-name">Client Portal</div><div class="feat-add">+£600</div></div><div class="toggle"></div></div>
+      <div class="feat-item" data-cost="300" onclick="toggleFeat(this)"><div><div class="feat-name">Multilingual</div><div class="feat-add">+£300</div></div><div class="toggle"></div></div>
+    </div>
+  </div>
+
+  <!-- STEP 4: TIMELINE -->
+  <div class="est-card">
+    <h3>What is your expected timeline?</h3>
+    <p>Urgent delivery may require a dedicated team or priority pricing.</p>
+    <div class="timeline-opts">
+      <div class="tl-opt" id="tl-urgent" onclick="selectTL('urgent')">Urgent (ASAP)</div>
+      <div class="tl-opt sel" id="tl-1mo" onclick="selectTL('1mo')">1 Month</div>
+      <div class="tl-opt" id="tl-3mo" onclick="selectTL('3mo')">2–3 Months</div>
+      <div class="tl-opt" id="tl-flex" onclick="selectTL('flex')">Flexible</div>
+    </div>
+  </div>
+
+  <!-- RESULT -->
+  <div class="result-card">
+    <div style="font-size:12.5px;font-weight:700;color:rgba(255,255,255,.6);letter-spacing:.8px;text-transform:uppercase;margin-bottom:8px;">Estimated Investment</div>
+    <div class="result-range" id="resultRange">£300 – £500</div>
+    <div class="result-breakdown" id="resultBreakdown"></div>
+    <div class="result-note" id="resultNote"></div>
+    <div class="cta-btns">
+      <button class="cta-btn cta-primary" onclick="window.location.href='index.html?page=start'">Get a Precise Quote →</button>
+      <button class="cta-btn cta-secondary" onclick="window.location.href='portal/login.html'">Start Your Project</button>
+    </div>
+  </div>
+
+  <div class="disclaimer">
+    <strong>Important:</strong> This estimator provides a rough indicative range only. Final pricing depends on actual project scope, feature complexity, timeline, platform, and mutual agreement after a proper discovery session with the MBDTECH LTD team. Prices shown are in GBP and exclude VAT where applicable.
+  </div>
+
+</div>
+
+<script>
+let platform = 'app';
+let timeline = '1mo';
+
+// PLATFORM BASE COSTS (min, max)
+const platformBase = {
+  web:  [100,500],
+  app:  [300,1000],
+  both: [700,2000],
+  saas: [1000,3000],
+};
+
+// TIMELINE MULTIPLIERS
+const tlMult = {
+  urgent:1.3, '1mo':1.1, '3mo':1.0, flex:0.95
+};
+
+// SCREEN TIERS
+function getScreenCost(n) {
+  if (n <= 2)  return { range:[100,150],  label:'1–2 screens: Basic app or landing page', tier:'basic' };
+  if (n <= 5)  return { range:[300,500],  label:'3–5 screens: Standard app or website', tier:'standard' };
+  if (n <= 15) return { range:[1000,3000],label:'5–15 screens: Mid-complexity project', tier:'mid' };
+  if (n <= 25) return { range:[3000,7000],label:'16–25 screens: Advanced / feature-rich', tier:'advanced' };
+  return            { range:[7000,20000], label:'25+ screens: Enterprise / custom system', tier:'enterprise' };
+}
+
+function updateEstimate() {
+  const screens = parseInt(document.getElementById('screenSlider').value);
+  document.getElementById('screenVal').textContent = screens;
+
+  const sc = getScreenCost(screens);
+  document.getElementById('screenTier').textContent = sc.label;
+
+  // Feature addons
+  let featTotal = 0;
+  const featItems = [];
+  document.querySelectorAll('.feat-item.on').forEach(el => {
+    const cost = parseInt(el.dataset.cost);
+    featTotal += cost;
+    featItems.push(el.querySelector('.feat-name').textContent + ' +£' + cost);
+  });
+
+  // Platform base
+  const pb = platformBase[platform];
+  const mult = tlMult[timeline];
+
+  let min = Math.round((sc.range[0] + pb[0] + featTotal) * mult / 50) * 50;
+  let max = Math.round((sc.range[1] + pb[1] + featTotal) * mult / 50) * 50;
+
+  // Enterprise floor
+  if (sc.tier === 'enterprise') { min = Math.max(min, 7000); max = Math.max(max, 15000); }
+
+  // Format
+  const fmt = n => n >= 1000 ? '£' + (n/1000).toFixed(1).replace('.0','') + 'K' : '£' + n;
+  document.getElementById('resultRange').textContent = fmt(min) + ' – ' + fmt(max);
+
+  // Breakdown
+  const bd = document.getElementById('resultBreakdown');
+  bd.innerHTML = `
+    <div class="rb-line"><span class="rb-label">Base (${screens} screens)</span><span class="rb-val">${fmt(sc.range[0])} – ${fmt(sc.range[1])}</span></div>
+    <div class="rb-line"><span class="rb-label">Platform (${platform})</span><span class="rb-val">+${fmt(pb[0])} – +${fmt(pb[1])}</span></div>
+    ${featTotal ? `<div class="rb-line"><span class="rb-label">Selected features</span><span class="rb-val">+£${featTotal}</span></div>` : ''}
+    ${timeline !== '3mo' ? `<div class="rb-line"><span class="rb-label">Timeline adjustment (${Math.round((mult-1)*100)}%)</span><span class="rb-val">${mult>1?'+':''}${Math.round((mult-1)*100)}%</span></div>` : ''}
+  `;
+
+  const notes = {
+    basic:    'Suitable for landing pages, portfolios, or simple mobile apps with minimal features.',
+    standard: 'A standard business website, brochure app, or entry-level mobile product.',
+    mid:      'A feature-complete product with authentication, backend, and standard integrations.',
+    advanced: 'A full-featured product or multi-panel system requiring complex logic.',
+    enterprise:'Enterprise-grade system. Custom quote recommended after detailed discovery session.',
+  };
+  document.getElementById('resultNote').textContent = notes[sc.tier];
+}
+
+function selectPlatform(p) {
+  platform = p;
+  document.querySelectorAll('[id^="plt-"]').forEach(el => el.classList.remove('sel'));
+  document.getElementById('plt-' + p).classList.add('sel');
+  updateEstimate();
+}
+
+function selectTL(t) {
+  timeline = t;
+  document.querySelectorAll('[id^="tl-"]').forEach(el => el.classList.remove('sel'));
+  document.getElementById('tl-' + t).classList.add('sel');
+  updateEstimate();
+}
+
+function toggleFeat(el) {
+  el.classList.toggle('on');
+  updateEstimate();
+}
+
+// Init
+updateEstimate();
+</script>
+</body>
+</html>

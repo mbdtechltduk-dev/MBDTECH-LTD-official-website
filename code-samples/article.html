@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Article | MBDTECH LTD</title>
+<link rel="stylesheet" href="/css/style.css">
+<style>
+.article-wrap{max-width:920px;margin:80px auto;padding:24px}
+.article-card{background:#fff;border:1px solid #e5e7eb;border-radius:24px;padding:36px;box-shadow:0 20px 60px rgba(15,23,42,.08)}
+.article-card h1{font-size:42px;line-height:1.15;margin-bottom:16px}
+.article-meta{color:#64748b;margin-bottom:24px}
+.article-content{font-size:17px;line-height:1.85;color:#1f2937}
+.article-cover{width:100%;max-height:420px;object-fit:cover;border-radius:18px;margin:20px 0}
+</style>
+</head>
+<body>
+<div class="article-wrap">
+  <a href="/?page=blog" class="btn btn-outline">← Back to Blog</a>
+  <div class="article-card" id="articleBox" style="margin-top:22px">
+    <h1>Loading article...</h1>
+  </div>
+</div>
+
+<script>
+(async function(){
+  const box=document.getElementById('articleBox');
+  const slug=new URLSearchParams(location.search).get('slug');
+  try{
+    const r=await fetch('/api/public/blog', { cache: 'force-cache' });
+    const data=await r.json();
+    const posts=data.posts||[];
+    const post=posts.find(p=>p.slug===slug) || posts[0];
+    if(!post){ box.innerHTML='<h1>Article not found</h1>'; return; }
+
+    document.title=(post.seo_title||post.title)+' | MBDTECH LTD';
+    box.innerHTML=`
+      <h1>${post.title||'Untitled Article'}</h1>
+      <div class="article-meta">${post.category||'Article'} · ${post.published_at ? new Date(post.published_at).toLocaleDateString() : ''}</div>
+      ${post.cover_image_url ? `<img class="article-cover" src="${post.cover_image_url}" alt="">` : ''}
+      <div class="article-content">${post.content || post.excerpt || ''}</div>
+    `;
+  }catch(e){
+    box.innerHTML='<h1>Unable to load article</h1><p>Please try again later.</p>';
+  }
+})();
+</script>
+</body>
+</html>

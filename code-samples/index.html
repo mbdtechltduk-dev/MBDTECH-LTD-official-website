@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ── PRIMARY SEO ─────────────────────────────────────── -->
+  <title>MBDTECH LTD | Mobile App, Website &amp; AI Software Development Company</title>
+  <meta name="description" content="MBDTECH LTD is a UK-registered IT company delivering mobile app development, website development, SaaS solutions, AI software, project management, app marketing, monetization, and ready-made digital products for startups and businesses.">
+  <meta name="keywords" content="mobile app development company, web application development, website development services, AI software solutions, SaaS development company, app marketing, app monetization, IT project management, ready-made apps, website templates, UK IT company">
+  <meta name="author" content="MBDTECH LTD">
+  <meta name="robots" content="index, follow">
+
+  <!-- ── CANONICAL ──────────────────────────────────────── -->
+  <link rel="canonical" href="https://mbdtechltd.com">
+
+  <!-- ── OPEN GRAPH ─────────────────────────────────────── -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="MBDTECH LTD">
+  <meta property="og:title" content="MBDTECH LTD | Mobile App, Website &amp; AI Software Development Company">
+  <meta property="og:description" content="MBDTECH LTD is a UK-registered IT company delivering mobile app development, website development, SaaS solutions, AI software, project management, app marketing, monetization, and ready-made digital products for startups and businesses.">
+  <meta property="og:url" content="https://mbdtechltd.com">
+  <meta property="og:image" content="https://mbdtechltd.com/assets/images/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- ── TWITTER / X CARD ───────────────────────────────── -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="MBDTECH LTD | Mobile App, Website &amp; AI Software Development Company">
+  <meta name="twitter:description" content="UK-registered IT company providing mobile app development, SaaS, AI solutions, app marketing, and ready-made digital products.">
+  <meta name="twitter:image" content="https://mbdtechltd.com/assets/images/og-image.png">
+
+  <!-- ── FAVICON ────────────────────────────────────────── -->
+  <!-- ── FAVICON & PWA ────────────────────────────────────── -->
+  <link rel="icon" type="image/png" href="/assets/logo-icon.png">
+  <link rel="apple-touch-icon" href="/assets/logo-icon.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/logo-icon.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/logo-icon.png">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="MBDTECH LTD">
+  <meta name="application-name" content="MBDTECH LTD">
+  <meta name="msapplication-TileColor" content="#071A3D">
+  <meta name="theme-color" content="#2563EB">
+
+  <!-- ── FONTS ──────────────────────────────────────────── -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- ── STYLESHEET ─────────────────────────────────────── -->
+  <link rel="stylesheet" href="css/style.css">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17015672494"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-17015672494');
+</script>
+
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a class="logo" onclick="showPage('home')">
+      <div class="logo-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+      </div>
+      <span class="logo-text">MBD<span>TECH</span> LTD</span>
+    </a>
+    <nav>
+      <a onclick="showPage('home')" class="active" id="nav-home">Home</a>
+      <a onclick="showPage('services')" id="nav-services">Services</a>
+      <a onclick="showPage('portfolio')" id="nav-portfolio">Portfolio</a>
+      <a onclick="showPage('marketplace')" id="nav-marketplace">Marketplace</a>
+      <a onclick="showPage('ai')" id="nav-ai">AI Features</a>
+      <a onclick="showPage('readylaunch')" id="nav-readylaunch">Ready to Launch</a>
+      <a onclick="showPage('blog')" id="nav-blog">Blog</a>
+      <a onclick="showPage('about')" id="nav-about">About</a>
+      <a onclick="showPage('contact')" id="nav-contact">Contact</a>
+      
+    </nav>
+    <button class="mob-menu-btn" id="mobMenuBtn" onclick="toggleMobMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="header-actions">
+      <a href="javascript:void(0)" onclick="alert('Client Portal is currently under development.')" class="btn btn-outline" style="white-space:nowrap;height:44px;padding:0 16px;display:inline-flex;align-items:center;justify-content:center;border-radius:14px;font-weight:600;">Client Portal</a>
+      <button class="btn btn-primary" onclick="showPage('start')">Start Project</button>
+    </div>
+  </div>
+</header>
+
+<!-- MOBILE NAV DRAWER -->
+<div class="mob-overlay" id="mobOverlay" onclick="toggleMobMenu()" style="display:none;"></div>
+<nav class="mob-drawer" id="mobDrawer">
+  <div class="mob-drawer-head">
+    <span class="logo-text" style="font-size:17px">MBD<span>TECH</span> LTD</span>
+    <button onclick="toggleMobMenu()" class="mob-close">
+      <svg width="18" height="18" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+  <div class="mob-nav-links">
+    <a onclick="showPage('home')">Home</a>
+    <a onclick="showPage('services')">Services</a>
+    <a onclick="showPage('portfolio')">Portfolio</a>
+    <a onclick="showPage('marketplace')">Marketplace</a>
+    <a onclick="showPage('ai')">AI Features</a>
+    <a onclick="showPage('readylaunch')">Ready to Launch</a>
+    <a onclick="showPage('blog')">Blog</a>
+    <a onclick="showPage('about')">About</a>
+    <a onclick="showPage('contact')">Contact</a>
+    <a href="portal/login.html" style="color:var(--blue);font-weight:600;">Client Portal</a>
+  </div>
+  <div class="mob-nav-actions">
+    <button class="btn btn-outline" style="width:100%;justify-content:center" onclick="toggleChat();closeMobMenu()">AI Consultant</button>
+    <button class="btn btn-primary" style="width:100%;justify-content:center;margin-top:8px" onclick="showPage('start')">Start Project</button>
+  </div>
+</nav>
+<main>
+
+<!-- ========== HOME PAGE ========== -->
+<div class="page active" id="page-home">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="dot"></span>
+        AI-Powered Development Agency
+      </div>
+      <h1>Build Scalable Mobile & Web <span class="highlight">Applications</span> for Your Business</h1>
+      <p class="hero-desc">MBDTECH LTD helps startups, entrepreneurs, and enterprises design, develop, launch, manage, and grow powerful digital products.</p>
+      <div class="hero-actions">
+        <button class="btn btn-primary btn-xl" onclick="showPage('start')">Start Your Project</button>
+        <button class="btn btn-outline btn-xl" onclick="showPage('portfolio')">View Portfolio</button>
+<button class="btn btn-outline btn-xl" onclick="window.location.href='estimator.html'">Cost Estimator</button>
+        <button class="btn btn-outline btn-xl" onclick="toggleChat()">AI Consultant</button>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item"><div class="stat-num">500+</div><div class="stat-label">Projects Delivered</div></div>
+        <div class="stat-item"><div class="stat-num">200+</div><div class="stat-label">Happy Clients</div></div>
+        <div class="stat-item"><div class="stat-num">50+</div><div class="stat-label">Team Members</div></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card main">
+        <div class="card-header">Mobile App Dashboard</div>
+        <div class="mock-bar w90"></div>
+        <div class="mock-bar w60"></div>
+        <div class="mock-bar w80"></div>
+        <div style="display:flex;gap:10px;margin-top:14px;">
+          <div style="flex:1;background:rgba(255,255,255,0.2);border-radius:8px;padding:10px;text-align:center;font-size:12px;font-weight:600;">Users<br><span style="font-size:20px;font-weight:800;">12.4K</span></div>
+          <div style="flex:1;background:rgba(255,255,255,0.2);border-radius:8px;padding:10px;text-align:center;font-size:12px;font-weight:600;">Revenue<br><span style="font-size:20px;font-weight:800;">$84K</span></div>
+        </div>
+      </div>
+      <div class="hero-card app1">
+        <div class="mini-icon"><svg viewBox="0 0 24 24" width="18" height="18" stroke="var(--blue2)" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/></svg></div>
+        <div class="card-title-sm">iOS App Build</div>
+        <div class="card-sub-sm">Status: In Progress</div>
+        <div class="progress-bar"><div class="progress-fill" style="width:72%"></div></div>
+        <div style="font-size:11px;color:var(--blue2);margin-top:4px;font-weight:600;">72% Complete</div>
+      </div>
+      <div class="hero-card app2">
+        <div class="mini-icon"><svg viewBox="0 0 24 24" width="18" height="18" stroke="var(--blue2)" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/></svg></div>
+        <div class="card-title-sm">Web Application</div>
+        <div class="card-sub-sm">SaaS Platform</div>
+        <div class="mock-bar dark" style="margin-top:8px;"></div>
+        <div class="mock-bar dark2" style="width:70%"></div>
+      </div>
+      <div class="hero-card stats">
+        <div class="mini-icon"><svg viewBox="0 0 24 24" width="18" height="18" stroke="var(--blue2)" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5M2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+        <div class="card-title-sm">AI Estimation</div>
+        <div class="metric-row"><span class="metric-label">Project Cost</span><span class="metric-val">$12K</span></div>
+        <div class="metric-row"><span class="metric-label">Timeline</span><span style="font-family:var(--font-head);font-size:15px;font-weight:700;color:var(--dark);">6 weeks</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<div class="trust-strip">
+  <div class="trust-inner container">
+    <div class="trust-item fade-in"><div class="trust-icon"><svg viewBox="0 0 24 24" width="26" height="26" stroke="var(--blue2)" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></div><div class="trust-num">500+</div><div class="trust-label">Projects Delivered</div></div>
+    <div class="trust-item fade-in"><div class="trust-icon"><svg viewBox="0 0 24 24" width="26" height="26" stroke="var(--blue2)" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><div class="trust-num">200+</div><div class="trust-label">Happy Clients</div></div>
+    <div class="trust-item fade-in"><div class="trust-icon"><svg viewBox="0 0 24 24" width="26" height="26" stroke="var(--blue2)" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><div class="trust-num">24/7</div><div class="trust-label">Support Available</div></div>
+    <div class="trust-item fade-in"><div class="trust-icon"><svg viewBox="0 0 24 24" width="26" height="26" stroke="var(--blue2)" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div><div class="trust-num">Global</div><div class="trust-label">Service Reach</div></div>
+  </div>
+</div>
+
+<!-- SERVICES PREVIEW -->
+<section>
+  <div class="container">
+    <div class="section-label"><span></span>What We Build</div>
+    <h2 class="section-title">Our Core Development<br>Services</h2>
+    <p class="section-sub">End-to-end digital product development from concept to launch and beyond.</p>
+    <div class="services-grid">
+      <div class="service-card fade-in"><div class="service-icon"><svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/></svg></div><h3>Mobile App Development</h3><p>Native and cross-platform mobile applications for iOS and Android with stunning UX.</p><a class="service-link" onclick="showPage('services')">Learn more →</a></div>
+      <div class="service-card fade-in"><div class="service-icon"><svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5M2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div><h3>Android App Development</h3><p>High-performance Android apps optimized for every device size and Android version.</p><a class="service-link" onclick="showPage('services')">Learn more →</a></div>
+      <div class="service-card fade-in"><div class="service-icon"><svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="9" y1="9" x2="15" y2="9"/></svg></div><h3>iOS App Development</h3><p>Premium iOS apps built with Swift, following Apple's Human Interface Guidelines.</p><a class="service-link" onclick="showPage('services')">Learn more →</a></div>
+      <div class="service-card fade-in"><div class="service-icon"><svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div><h3>Web Application Development</h3><p>Scalable, secure web applications built with modern frameworks like React and Next.js.</p><a class="service-link" onclick="showPage('services')">Learn more →</a></div>
+      <div class="service-card fade-in"><div class="service-icon"><svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="12" x2="10" y2="12"/><line x1="8" y1="10" x2="8" y2="14"/><line x1="15" y1="13" x2="15.01" y2="13"/><line x1="18" y1="11" x2="18.01" y2="11"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg></div><h3>Game Development</h3><p>Engaging mobile and web games built with Unity, Unreal Engine, and HTML5.</p><a class="service-link" onclick="showPage('services')">Learn more →</a></div>
+      <div class="service-card fade-in"><div class="service-icon"><svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/></svg></div><h3>UI/UX Design</h3><p>Research-driven, pixel-perfect UI/UX design that converts users and delights customers.</p><a class="service-link" onclick="showPage('services')">Learn more →</a></div>
+      <div class="service-card fade-in"><div class="service-icon"><svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg></div><h3>App Marketing</h3><p>Full-stack app marketing — ASO, social campaigns, influencer outreach, and paid ads.</p><a class="service-link" onclick="showPage('services')">Learn more →</a></div>
+      <div class="service-card fade-in"><div class="service-icon"><svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div><h3>App Monetization</h3><p>Strategic monetization — subscriptions, in-app purchases, ads, and freemium models.</p><a class="service-link" onclick="showPage('services')">Learn more →</a></div>
+      <div class="service-card fade-in"><div class="service-icon"><svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div><h3>App Maintenance</h3><p>Ongoing support, updates, performance monitoring, and bug fixes after launch.</p><a class="service-link" onclick="showPage('services')">Learn more →</a></div>
+      <div class="service-card fade-in"><div class="service-icon"><svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/></svg></div><h3>Project Management</h3><p>Agile project management services ensuring on-time delivery and transparent communication.</p><a class="service-link" onclick="showPage('services')">Learn more →</a></div>
+    </div>
+    <div class="text-center mt-8"><button class="btn btn-primary btn-lg" onclick="showPage('services')">View All Services</button></div>
+  </div>
+</section>
+
+<!-- AI FEATURES -->
+<section class="ai-section">
+  <div class="ai-inner">
+    <div class="section-label"><span></span>Powered by AI</div>
+    <h2 class="section-title">AI-Powered Features <br>Built Into Our Process</h2>
+    <p class="section-sub">From instant project estimation to trend analysis — our AI tools give you an edge before development even starts.</p>
+    <div class="ai-grid">
+      <div class="ai-card fade-in"><div class="ai-card-icon"><svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div><h3>AI Chat Assistant</h3><p>Get instant answers about your project, services, pricing, and timelines. Available 24/7.</p></div>
+      <div class="ai-card fade-in"><div class="ai-card-icon"><svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div><h3>AI Project Estimator</h3><p>Describe your idea, and our AI instantly estimates cost, time, and tech stack requirements.</p></div>
+      <div class="ai-card fade-in"><div class="ai-card-icon"><svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div><h3>AI Trend Analyzer</h3><p>Discover what app ideas and digital products are trending before you build them.</p></div>
+      <div class="ai-card fade-in"><div class="ai-card-icon"><svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div><h3>Smart Recommendations</h3><p>AI-powered service recommendations based on your business type, budget, and goals.</p></div>
+      <div class="ai-card fade-in"><div class="ai-card-icon"><svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div><h3>AI Proposal Generator</h3><p>Receive a detailed, professional project proposal generated instantly by AI.</p></div>
+    </div>
+    <div class="text-center mt-8"><button class="btn btn-white btn-lg" onclick="showPage('ai')">Explore AI Features</button></div>
+  </div>
+</section>
+
+<!-- TRENDING IDEAS -->
+<section>
+  <div class="container">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-bottom:36px;">
+      <div>
+        <div class="section-label"><span></span>Market Intelligence</div>
+        <h2 class="section-title">Trending Digital<br>Project Ideas</h2>
+        <p class="section-sub" style="margin-top:10px;font-size:16px;">Real market data. Build the right product at the right time.</p>
+      </div>
+      <a href="trending.html" style="display:inline-flex;align-items:center;gap:7px;font-size:13.5px;font-weight:600;color:var(--blue);text-decoration:none;white-space:nowrap;border:1.5px solid var(--blue-mid);padding:9px 18px;border-radius:9px;transition:all .2s;" onmouseover="this.style.background='var(--blue-light)'" onmouseout="this.style.background=''">
+        View Full Report
+        <svg width="14" height="14" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+
+    <!-- Demand chart bar — compact premium -->
+    <div style="background:white;border:1.5px solid var(--border);border-radius:18px;padding:28px 32px;margin-bottom:28px;box-shadow:var(--shadow);">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:22px;flex-wrap:wrap;gap:8px;">
+        <div>
+          <div style="font-family:var(--font-head);font-size:15px;font-weight:700;color:var(--dark);">Market Demand by Category</div>
+          <div style="font-size:12.5px;color:var(--gray);margin-top:3px;">Composite score · Updated daily</div>
+        </div>
+        <div style="display:flex;align-items:center;gap:6px;font-size:12px;color:var(--gray);">
+          <span style="width:8px;height:8px;background:#22c55e;border-radius:50%;display:inline-block;"></span>High demand
+          <span style="width:8px;height:8px;background:var(--blue2);border-radius:50%;display:inline-block;margin-left:6px;"></span>Growing
+        </div>
+      </div>
+      <div class="trend-mini-chart">
+        <div class="tmc-row"><div class="tmc-label">AI Resume Builder</div><div class="tmc-bar-wrap"><div class="tmc-bar" style="width:96%;background:linear-gradient(90deg,#22c55e,#16a34a)"></div></div><div class="tmc-pct" style="color:#16a34a">96%</div></div>
+        <div class="tmc-row"><div class="tmc-label">Food Delivery App</div><div class="tmc-bar-wrap"><div class="tmc-bar" style="width:92%;background:linear-gradient(90deg,#22c55e,#16a34a)"></div></div><div class="tmc-pct" style="color:#16a34a">92%</div></div>
+        <div class="tmc-row"><div class="tmc-label">Booking Platform SaaS</div><div class="tmc-bar-wrap"><div class="tmc-bar" style="width:88%"></div></div><div class="tmc-pct">88%</div></div>
+        <div class="tmc-row"><div class="tmc-label">AI Fitness Coach App</div><div class="tmc-bar-wrap"><div class="tmc-bar" style="width:84%"></div></div><div class="tmc-pct">84%</div></div>
+        <div class="tmc-row"><div class="tmc-label">CRM Dashboard</div><div class="tmc-bar-wrap"><div class="tmc-bar" style="width:81%"></div></div><div class="tmc-pct">81%</div></div>
+        <div class="tmc-row"><div class="tmc-label">Mobile E-Commerce</div><div class="tmc-bar-wrap"><div class="tmc-bar" style="width:79%"></div></div><div class="tmc-pct">79%</div></div>
+      </div>
+    </div>
+
+    <!-- Top 3 trend cards — compact -->
+    <div class="trending-grid" style="grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;">
+      <div class="trend-card fade-in">
+        <div class="trend-top"><span class="trend-category">AI Tool</span><div class="trend-score">96<div class="trend-score-bar"><div class="trend-score-fill" style="width:96%"></div></div></div></div>
+        <h3>AI Resume &amp; CV Builder</h3>
+        <p>Subscription SaaS generating ATS-optimised CVs and cover letters. High search volume, proven willingness to pay.</p>
+        <button class="btn btn-outline" onclick="showPage('start')">Build Similar Project</button>
+      </div>
+      <div class="trend-card fade-in">
+        <div class="trend-top"><span class="trend-category">Mobile App</span><div class="trend-score">92<div class="trend-score-bar"><div class="trend-score-fill" style="width:92%"></div></div></div></div>
+        <h3>Food Delivery Platform</h3>
+        <p>Multi-restaurant delivery with real-time GPS, driver app, and POS integration. Proven revenue model globally.</p>
+        <button class="btn btn-outline" onclick="showPage('start')">Build Similar Project</button>
+      </div>
+      <div class="trend-card fade-in">
+        <div class="trend-top"><span class="trend-category">SaaS Platform</span><div class="trend-score">88<div class="trend-score-bar"><div class="trend-score-fill" style="width:88%"></div></div></div></div>
+        <h3>Professional Booking Platform</h3>
+        <p>Universal booking SaaS for clinics, salons, and service professionals. Stripe payments, calendar sync, white-label.</p>
+        <button class="btn btn-outline" onclick="showPage('start')">Build Similar Project</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- PORTFOLIO PREVIEW -->
+<section style="background:var(--gray-light);">
+  <div class="container">
+    <div class="section-label"><span></span>Our Work</div>
+    <h2 class="section-title">Featured Projects</h2>
+    <p class="section-sub">A selection of apps, platforms, and digital products we've delivered for clients worldwide.</p>
+    <div class="portfolio-grid mt-12">
+      <div class="portfolio-card fade-in"><div class="portfolio-img"><svg style="width:52px;height:52px;stroke:rgba(96,165,250,.35);fill:none;stroke-width:1.1" viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="portfolio-badge">E-Commerce App</span></div><div class="portfolio-body"><div class="portfolio-tech"><span class="tech-tag">React Native</span><span class="tech-tag">Node.js</span><span class="tech-tag">AWS</span></div><h3>ShopSmart — Retail App</h3><p>A full-featured e-commerce mobile app with AI product recommendations and seamless checkout.</p><button class="btn btn-outline">View Case Study →</button></div></div>
+    </div>
+    <div class="text-center mt-8"><button class="btn btn-primary btn-lg" onclick="showPage('portfolio')">View Full Portfolio</button></div>
+  </div>
+</section>
+
+<!-- MARKETPLACE PREVIEW -->
+<section>
+  <div class="container">
+    <div class="section-label"><span></span>Ready to Launch</div>
+    <h2 class="section-title">Marketplace — Buy Ready-Made Products</h2>
+    <p class="section-sub">Launch faster with our premium ready-made apps, templates, and SaaS scripts.</p>
+    <div class="marketplace-grid">
+    </div>
+    <div class="text-center mt-8"><button class="btn btn-primary btn-lg" onclick="showPage('marketplace')">Browse Marketplace</button></div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process-section">
+  <div class="container">
+    <div class="section-label"><span></span>How We Work</div>
+    <h2 class="section-title text-center">Our Development Process</h2>
+    <p class="section-sub text-center">A battle-tested, transparent process designed for predictable outcomes.</p>
+    <div class="process-grid">
+      <div class="process-card fade-in"><div class="process-num">1</div><h3>Idea & Planning</h3><p>We analyze your idea, define goals, and create a detailed project roadmap.</p></div>
+      <div class="process-card fade-in"><div class="process-num">2</div><h3>UI/UX Design</h3><p>Wireframes, prototypes, and high-fidelity designs crafted for your users.</p></div>
+      <div class="process-card fade-in"><div class="process-num">3</div><h3>Development</h3><p>Agile sprints with weekly demos and continuous integration pipelines.</p></div>
+      <div class="process-card fade-in"><div class="process-num">4</div><h3>Testing & QA</h3><p>Rigorous testing across devices, browsers, and edge cases before launch.</p></div>
+      <div class="process-card fade-in"><div class="process-num">5</div><h3>Launch</h3><p>App store submission, server setup, monitoring, and successful go-live.</p></div>
+      <div class="process-card fade-in"><div class="process-num">6</div><h3>Maintenance & Growth</h3><p>Ongoing support, feature updates, and growth optimization post-launch.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE -->
+<section>
+  <div class="container">
+    <div class="section-label"><span></span>Why MBDTECH LTD</div>
+    <h2 class="section-title">Your Success Is Our <br>Core Metric</h2>
+    <div class="why-grid">
+      <div class="why-list">
+        <div class="why-item fade-in"><div class="why-icon"><svg viewBox="0 0 24 24" width="20" height="20" stroke="var(--blue2)" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><polyline points="16 11 18 13 22 9"/></svg></div><div><h4>Experienced Development Team</h4><p>50+ specialists in mobile, web, AI, design, and QA with an average of 6 years of experience.</p></div></div>
+        <div class="why-item fade-in"><div class="why-icon"><svg viewBox="0 0 24 24" width="20" height="20" stroke="var(--blue2)" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg></div><div><h4>End-to-End Project Management</h4><p>Dedicated project managers ensuring clear communication and milestone tracking throughout.</p></div></div>
+        <div class="why-item fade-in"><div class="why-icon"><svg viewBox="0 0 24 24" width="20" height="20" stroke="var(--blue2)" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg></div><div><h4>Scalable Solutions</h4><p>Architecture designed to handle your growth from 100 to 10 million users without rebuilding.</p></div></div>
+        <div class="why-item fade-in"><div class="why-icon"><svg viewBox="0 0 24 24" width="20" height="20" stroke="var(--blue2)" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><div><h4>On-Time Delivery</h4><p>98% of our projects are delivered on schedule, backed by milestone-based contracts.</p></div></div>
+        <div class="why-item fade-in"><div class="why-icon"><svg viewBox="0 0 24 24" width="20" height="20" stroke="var(--blue2)" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5M2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div><div><h4>AI-Powered Consultation</h4><p>AI tools that estimate, plan, and advise on your project before a single line of code is written.</p></div></div>
+        <div class="why-item fade-in"><div class="why-icon"><svg viewBox="0 0 24 24" width="20" height="20" stroke="var(--blue2)" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div><div><h4>Long-Term Support</h4><p>We're a partner, not just a vendor. Post-launch support plans keep your product healthy.</p></div></div>
+      </div>
+      <div class="why-visual fade-in">
+        <div class="why-visual-title">Client Satisfaction Report</div>
+        <div class="why-stat-row"><span class="why-stat-name">On-Time Delivery Rate</span><span class="why-stat-val">98%</span></div>
+        <div class="why-stat-row"><span class="why-stat-name">Client Retention Rate</span><span class="why-stat-val">94%</span></div>
+        <div class="why-stat-row"><span class="why-stat-name">Average Project Rating</span><span class="why-stat-val">4.9 / 5</span></div>
+        <div class="why-stat-row"><span class="why-stat-name">NPS Score</span><span class="why-stat-val">+72</span></div>
+        <div class="why-stat-row"><span class="why-stat-name">Support Response Time</span><span class="why-stat-val">&lt; 2 hours</span></div>
+        <div class="mt-6"><button class="btn btn-white btn-lg" onclick="showPage('start')" style="width:100%;justify-content:center;">Start a Project Today →</button></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG PREVIEW -->
+<section style="background:var(--gray-light);">
+  <div class="container">
+    <div class="section-label"><span></span>Knowledge Hub</div>
+    <h2 class="section-title">Latest Articles & Insights</h2>
+    <p class="section-sub">Expert content on app development, AI, SaaS, and digital product strategy.</p>
+    <div class="blog-grid" id="publicBlogGrid">
+      <div class="blog-card"><div class="blog-body"><h3>Loading articles...</h3><p>Please wait while we load the latest MBDTECH LTD articles.</p></div></div>
+    </div>
+  </section>
+
+<!-- CTA BANNER -->
+<section class="cta-banner">
+  <div class="container">
+    <h2>Have an Idea? Let's Build Your<br>Next Digital Product.</h2>
+    <p>From concept to launch, MBDTECH LTD is your end-to-end development partner.</p>
+    <div class="cta-actions">
+      <button class="btn btn-white btn-xl" onclick="showPage('contact')">Get Free Consultation</button>
+      <button class="btn btn-outline btn-xl" style="border-color:rgba(255,255,255,0.3);color:white;" onclick="showPage('start')">Start Project →</button>
+    </div>
+  </div>
+</section>
+
+</div><!-- end home -->
+
+<!-- ========== SERVICES PAGE ========== -->
+<div class="page" id="page-services">
+<section style="background:linear-gradient(135deg,var(--blue),var(--blue2));padding:80px 32px;text-align:center;color:white;">
+  <div class="container">
+    <div class="section-label" style="background:rgba(255,255,255,0.15);color:white;margin:0 auto 20px;"><span style="background:white;"></span>What We Offer</div>
+    <h1 class="section-title" style="color:white;">Complete App & Web Development Services</h1>
+    <p class="section-sub" style="color:rgba(255,255,255,0.75);margin:16px auto 0;">From concept to launch — we cover every stage of your digital product journey.</p>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div style="display:flex;flex-direction:column;gap:60px;">
+      <!-- Service detail rows -->
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;">
+        <div><div class="section-label"><span></span>Mobile Development</div><h2 style="font-size:32px;font-weight:800;color:var(--dark);letter-spacing:-1px;margin-bottom:14px;">Mobile App Development</h2><p style="font-size:16px;color:var(--gray);line-height:1.75;margin-bottom:20px;">We build native and cross-platform mobile applications that are fast, beautiful, and scalable. Our mobile team has shipped 300+ apps across categories including e-commerce, health, fintech, and education.</p><div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px;"><span class="tech-tag" style="font-size:13px;padding:6px 14px;">React Native</span><span class="tech-tag" style="font-size:13px;padding:6px 14px;">Flutter</span><span class="tech-tag" style="font-size:13px;padding:6px 14px;">Swift</span><span class="tech-tag" style="font-size:13px;padding:6px 14px;">Kotlin</span></div><button class="btn btn-primary btn-lg" onclick="showPage('start')">Start Mobile Project</button></div>
+        <div style="background:var(--blue-light);border-radius:20px;padding:40px;display:flex;flex-direction:column;gap:12px;">
+          <div style="background:white;border-radius:14px;padding:18px;border:1px solid var(--border);"><div style="font-weight:700;margin-bottom:8px;font-size:15px;">Benefits</div><div style="font-size:14px;color:var(--gray);line-height:1.8;">• Native performance on iOS & Android<br>• Offline-first architecture<br>• Push notifications & deep linking<br>• App Store & Play Store submission<br>• Ongoing maintenance plans</div></div>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;direction:rtl;">
+        <div style="direction:ltr;"><div class="section-label"><span></span>Web Development</div><h2 style="font-size:32px;font-weight:800;color:var(--dark);letter-spacing:-1px;margin-bottom:14px;">Web Application Development</h2><p style="font-size:16px;color:var(--gray);line-height:1.75;margin-bottom:20px;">Scalable, secure, and SEO-friendly web applications. We specialize in SaaS platforms, marketplaces, dashboards, and enterprise web tools using the latest frameworks.</p><div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px;"><span class="tech-tag" style="font-size:13px;padding:6px 14px;">Next.js</span><span class="tech-tag" style="font-size:13px;padding:6px 14px;">React</span><span class="tech-tag" style="font-size:13px;padding:6px 14px;">Node.js</span><span class="tech-tag" style="font-size:13px;padding:6px 14px;">PostgreSQL</span></div><button class="btn btn-primary btn-lg" onclick="showPage('start')">Start Web Project</button></div>
+        <div style="background:var(--dark);border-radius:20px;padding:40px;direction:ltr;">
+          <div style="color:rgba(255,255,255,0.5);font-size:12px;margin-bottom:8px;">mbdtech-saas / dashboard.tsx</div>
+          <div style="background:#0F172A;border-radius:10px;padding:20px;font-family:monospace;font-size:13px;line-height:1.8;color:#94a3b8;"><span style="color:#7dd3fc;">const</span> <span style="color:#a78bfa;">App</span> <span style="color:#f8fafc;">= () => {</span><br>&nbsp;&nbsp;<span style="color:#7dd3fc;">return</span> <span style="color:#f8fafc;">(</span><br>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#fbbf24;">&lt;Dashboard</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#a78bfa;">analytics</span><span style="color:#f8fafc;">=</span><span style="color:#34d399;">{true}</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#a78bfa;">aiPowered</span><span style="color:#f8fafc;">=</span><span style="color:#34d399;">{true}</span><br>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#fbbf24;">/&gt;</span><br>&nbsp;&nbsp;<span style="color:#f8fafc;">);</span><br><span style="color:#f8fafc;">};</span></div>
+        </div>
+      </div>
+      <!-- Remaining services grid -->
+      <div><h2 style="font-size:28px;font-weight:800;color:var(--dark);letter-spacing:-1px;margin-bottom:32px;">More Services</h2>
+      <div class="services-grid">
+        <div class="service-card"><div class="service-icon"><svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="12" x2="10" y2="12"/><line x1="8" y1="10" x2="8" y2="14"/><line x1="15" y1="13" x2="15.01" y2="13"/><line x1="18" y1="11" x2="18.01" y2="11"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg></div><h3>Game Development</h3><p>Mobile and web games built with Unity and Unreal Engine. 2D, 3D, hyper-casual, and mid-core games.</p><button class="btn btn-outline mt-4" onclick="showPage('start')" style="width:100%;justify-content:center;">Get Quote</button></div>
+        <div class="service-card"><div class="service-icon"><svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/></svg></div><h3>UI/UX Design</h3><p>Research-driven, user-centered design. Wireframes, prototypes, and full Figma design systems.</p><button class="btn btn-outline mt-4" onclick="showPage('start')" style="width:100%;justify-content:center;">Get Quote</button></div>
+        <div class="service-card"><div class="service-icon"><svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg></div><h3>App Marketing</h3><p>ASO, social media, influencer campaigns, paid ads (Meta, Google), and app launch strategies.</p><button class="btn btn-outline mt-4" onclick="showPage('start')" style="width:100%;justify-content:center;">Get Quote</button></div>
+        <div class="service-card"><div class="service-icon"><svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div><h3>App Monetization</h3><p>Subscription models, in-app purchases, ad integration (AdMob, Meta Audience Network), and freemium.</p><button class="btn btn-outline mt-4" onclick="showPage('start')" style="width:100%;justify-content:center;">Get Quote</button></div>
+        <div class="service-card"><div class="service-icon"><svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div><h3>App Maintenance</h3><p>Monthly maintenance plans with updates, bug fixes, performance monitoring, and security patches.</p><button class="btn btn-outline mt-4" onclick="showPage('start')" style="width:100%;justify-content:center;">Get Quote</button></div>
+        <div class="service-card"><div class="service-icon"><svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/></svg></div><h3>Project Management</h3><p>Agile project management services with weekly reporting, Jira boards, and dedicated PMs.</p><button class="btn btn-outline mt-4" onclick="showPage('start')" style="width:100%;justify-content:center;">Get Quote</button></div>
+      </div></div>
+    </div>
+  </div>
+</section>
+<section class="cta-banner"><div class="container"><h2>Ready to Start Your Project?</h2><p>Get a free consultation and project estimate today.</p><div class="cta-actions"><button class="btn btn-white btn-xl" onclick="showPage('start')">Start a Project</button><button class="btn btn-outline btn-xl" style="border-color:rgba(255,255,255,0.3);color:white;" onclick="toggleChat()">Talk to AI</button></div></div></section>
+</div>
+
+<!-- ========== PORTFOLIO PAGE ========== -->
+<div class="page" id="page-portfolio">
+<section style="background:linear-gradient(135deg,var(--dark),var(--dark2));padding:80px 32px;text-align:center;color:white;">
+  <div class="container"><div class="section-label" style="background:rgba(255,255,255,0.1);color:white;margin:0 auto 20px;"><span style="background:white;"></span>Our Work</div><h1 class="section-title" style="color:white;">500+ Projects. Real Results.</h1><p class="section-sub" style="color:rgba(255,255,255,0.6);margin:16px auto 0;">Case studies from mobile apps, SaaS platforms, games, and AI tools we've shipped.</p></div>
+</section>
+<section>
+  <div class="container">
+    <div class="portfolio-filters" id="portfolioFilters">
+      <button class="filter-btn active" onclick="filterPortfolio('all', this)">All Projects</button>
+      <button class="filter-btn" onclick="filterPortfolio('app', this)">Mobile Apps</button>
+      <button class="filter-btn" onclick="filterPortfolio('web', this)">Websites</button>
+      <button class="filter-btn" onclick="filterPortfolio('saas', this)">SaaS</button>
+      <button class="filter-btn" onclick="filterPortfolio('game', this)">Games</button>
+      <button class="filter-btn" onclick="filterPortfolio('ai', this)">AI Tools</button>
+    </div>
+    <div class="portfolio-grid" id="portfolioGrid">
+      <p style="color:#64748B;">Loading latest portfolio projects...</p>
+
+  </div>
+</section>
+<section class="cta-banner"><div class="container"><h2>Want to Build Something Like This?</h2><p>Tell us your idea and we'll craft a custom proposal.</p><div class="cta-actions"><button class="btn btn-white btn-xl" onclick="showPage('start')">Start Your Project</button></div></div></section>
+</div>
+
+<!-- ========== MARKETPLACE PAGE ========== -->
+<div class="page" id="page-marketplace">
+<section style="background:linear-gradient(135deg,var(--blue),var(--blue2));padding:80px 32px;text-align:center;color:white;">
+  <div class="container"><div class="section-label" style="background:rgba(255,255,255,0.15);color:white;margin:0 auto 20px;"><span style="background:white;"></span>Ready-Made Products</div><h1 class="section-title" style="color:white;">Launch Faster with Pre-Built Digital Products</h1><p class="section-sub" style="color:rgba(255,255,255,0.75);margin:16px auto 0;">Purchase, customize, and deploy in days — not months.</p></div>
+</section>
+<section>
+  <div class="container">
+    <div class="portfolio-filters">
+      <button class="filter-btn marketplace-filter-btn active" data-cat="all">All Products</button>
+      <button class="filter-btn marketplace-filter-btn" data-cat="app">Mobile Apps</button>
+      <button class="filter-btn marketplace-filter-btn" data-cat="template">Website Templates</button>
+      <button class="filter-btn marketplace-filter-btn" data-cat="admin">Admin Panels</button>
+      <button class="filter-btn marketplace-filter-btn" data-cat="saas">SaaS Scripts</button>
+      <button class="filter-btn marketplace-filter-btn" data-cat="ui">UI Kits</button>
+    </div>
+    <div class="marketplace-grid" id="marketplaceGrid">
+      <p style="color:#64748B;">Loading latest marketplace products...</p>
+
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- ========== AI FEATURES PAGE ========== -->
+<div class="page" id="page-ai">
+<section style="background:var(--dark);padding:80px 32px;text-align:center;">
+  <div class="container"><div class="section-label" style="background:rgba(255,255,255,0.1);color:rgba(255,255,255,0.8);margin:0 auto 20px;"><span style="background:white;"></span>AI-Powered Tools</div><h1 class="section-title" style="color:white;">Smarter Development Starts<br>with AI</h1><p class="section-sub" style="color:rgba(255,255,255,0.6);margin:16px auto 0;">MBDTECH LTD uses cutting-edge AI tools to speed up estimation, ideation, and project planning.</p><div class="mt-8"><button class="btn btn-white btn-xl" onclick="toggleChat()">AI Consultant</button></div></div>
+</section>
+<section>
+  <div class="container">
+    <div class="ai-page-grid">
+      <div class="ai-feature-row">
+        <div class="ai-feature-visual">
+          <div class="chat-bubble">Hi! I want to build a food delivery app. Where do I start?</div>
+          <div class="chat-bubble ai">Great idea! A food delivery app typically includes 3 panels: Customer, Driver, and Restaurant. Based on similar projects, estimated cost is $8,000–$15,000 and timeline is 8–12 weeks.</div>
+          <div class="chat-bubble">What tech stack would you recommend?</div>
+          <div class="chat-bubble ai">For scalability: React Native (mobile), Node.js + Express (backend), PostgreSQL (database), and AWS for hosting. Want a detailed proposal?</div>
+        </div>
+        <div class="ai-feature-content">
+          <div class="ai-feature-tags"><span class="ai-tag">OpenAI GPT-4</span><span class="ai-tag">Real-time</span><span class="ai-tag">24/7 Available</span></div>
+          <h3>AI Chat Assistant</h3>
+          <p>Ask anything about your project idea — pricing, tech stack, timelines, or which service you need. Our AI assistant is trained on 500+ successful projects and gives you expert-level guidance instantly.</p>
+          <button class="btn btn-primary btn-lg" onclick="toggleChat()">Try AI Chat Now</button>
+        </div>
+      </div>
+      <div class="ai-feature-row reverse">
+        <div class="ai-feature-visual">
+          <div style="background:white;border-radius:14px;padding:20px;border:1px solid var(--border);">
+            <div style="font-weight:700;margin-bottom:16px;font-size:15px;">Project Estimate</div>
+            <div style="display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--border);font-size:14px;"><span style="color:var(--gray)">App Type</span><span style="font-weight:600;">Food Delivery App</span></div>
+            <div style="display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--border);font-size:14px;"><span style="color:var(--gray)">Platforms</span><span style="font-weight:600;">iOS + Android</span></div>
+            <div style="display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--border);font-size:14px;"><span style="color:var(--gray)">Timeline</span><span style="font-weight:600;">10–12 Weeks</span></div>
+            <div style="display:flex;justify-content:space-between;padding:12px 0;font-size:16px;"><span style="color:var(--gray)">Estimated Cost</span><span style="font-family:var(--font-head);font-weight:800;color:var(--blue);font-size:20px;">$10,000–$15,000</span></div>
+          </div>
+        </div>
+        <div class="ai-feature-content">
+          <div class="ai-feature-tags"><span class="ai-tag">Instant Estimate</span><span class="ai-tag">AI Powered</span><span class="ai-tag">500+ Benchmarks</span></div>
+          <h3>AI Project Estimator</h3>
+          <p>Describe your app idea in plain English and get an instant cost and timeline estimate. No need for a call. Our AI benchmarks your project against 500+ real deliveries to give you accurate numbers.</p>
+          <button class="btn btn-primary btn-lg" onclick="showPage('start')">Get Free Estimate</button>
+        </div>
+      </div>
+      <div class="ai-feature-row">
+        <div class="ai-feature-visual">
+          <div style="background:white;border-radius:14px;padding:20px;border:1px solid var(--border);">
+            <div style="font-weight:700;margin-bottom:16px;">Trending Now</div>
+            <div style="display:flex;flex-direction:column;gap:10px;">
+              <div style="display:flex;justify-content:space-between;align-items:center;"><span style="font-size:14px;">AI SaaS Tools</span><div style="width:80px;height:6px;background:var(--border);border-radius:3px;overflow:hidden;"><div style="width:96%;height:100%;background:#22c55e;border-radius:3px;"></div></div><span style="font-size:12px;font-weight:700;color:#16a34a;">96</span></div>
+              <div style="display:flex;justify-content:space-between;align-items:center;"><span style="font-size:14px;">Delivery Apps</span><div style="width:80px;height:6px;background:var(--border);border-radius:3px;overflow:hidden;"><div style="width:88%;height:100%;background:#22c55e;border-radius:3px;"></div></div><span style="font-size:12px;font-weight:700;color:#16a34a;">88</span></div>
+              <div style="display:flex;justify-content:space-between;align-items:center;"><span style="font-size:14px;">FinTech Apps</span><div style="width:80px;height:6px;background:var(--border);border-radius:3px;overflow:hidden;"><div style="width:82%;height:100%;background:#f59e0b;border-radius:3px;"></div></div><span style="font-size:12px;font-weight:700;color:#d97706;">82</span></div>
+              <div style="display:flex;justify-content:space-between;align-items:center;"><span style="font-size:14px;">EdTech Platforms</span><div style="width:80px;height:6px;background:var(--border);border-radius:3px;overflow:hidden;"><div style="width:78%;height:100%;background:#f59e0b;border-radius:3px;"></div></div><span style="font-size:12px;font-weight:700;color:#d97706;">78</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="ai-feature-content">
+          <div class="ai-feature-tags"><span class="ai-tag">Product Hunt</span><span class="ai-tag">Google Trends</span><span class="ai-tag">GitHub</span></div>
+          <h3>AI Trend Analyzer</h3>
+          <p>Discover what app ideas and digital products are gaining the most traction before you build. Our AI aggregates data from Product Hunt, Google Trends, GitHub, and App Stores to surface winning ideas.</p>
+          <button class="btn btn-primary btn-lg" onclick="showPage('home')">See Trending Ideas</button>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-12" style="padding:60px;background:var(--blue-light);border-radius:24px;">
+      <h2 style="font-size:32px;font-weight:800;margin-bottom:12px;">Ready to Experience AI-Powered Development?</h2>
+      <p style="color:var(--gray);margin-bottom:28px;">Start a conversation with our AI assistant or get an instant project estimate.</p>
+      <div class="flex justify-center gap-3 flex-wrap"><button class="btn btn-primary btn-lg" onclick="toggleChat()">AI Consultant</button><button class="btn btn-outline btn-lg" onclick="showPage('start')">Get AI Estimate</button></div>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- ========== READY TO LAUNCH PAGE ========== -->
+<div class="page" id="page-readylaunch">
+<section style="background:linear-gradient(135deg,var(--blue),var(--blue2));padding:80px 32px;text-align:center;color:white;">
+  <div class="container">
+    <div class="section-label" style="background:rgba(255,255,255,.15);color:white;margin:0 auto 20px;"><span style="background:white;"></span>Ready to Deploy</div>
+    <h1 class="section-title" style="color:white;">Ready-to-Launch Digital Products</h1>
+    <p class="section-sub" style="color:rgba(255,255,255,.78);margin:16px auto 0;">Production-ready apps, websites, and SaaS products available for immediate purchase and deployment. All customisable by our UK team.</p>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="portfolio-filters" id="rlFilters" style="margin-bottom:32px;">
+      <button class="filter-btn rl-filter-btn active" data-cat="all">All Products</button>
+      <button class="filter-btn rl-filter-btn" data-cat="app">Mobile Apps</button>
+      <button class="filter-btn rl-filter-btn" data-cat="web">Websites</button>
+      <button class="filter-btn rl-filter-btn" data-cat="saas">SaaS</button>
+      <button class="filter-btn rl-filter-btn" data-cat="admin">Admin Panels</button>
+      <button class="filter-btn rl-filter-btn" data-cat="template">Templates</button>
+      <div class="rl-filter-dropdown">
+        <button class="filter-btn" id="rlFilterToggle" type="button">Filter: All ▾</button>
+        <div class="rl-filter-menu" id="rlFilterMenu">
+          <button type="button" data-type="all">All</button>
+          <button type="button" data-type="ios">iOS Apps</button>
+          <button type="button" data-type="android">Android Apps</button>
+          <button type="button" data-type="cross">Cross-Platform</button>
+          <button type="button" data-type="game">Game</button>
+          <button type="button" data-type="admin">Admin Panels</button>
+          <button type="button" data-type="saas">SaaS</button>
+          <button type="button" data-type="template">Templates</button>
+        </div>
+      </div>
+    </div>
+    <div class="marketplace-grid" id="rlGrid"></div>
+  </div>
+</section>
+
+<!-- Purchase Request Modal -->
+<div id="rlRequestModal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.65);z-index:2000;align-items:center;justify-content:center;padding:20px;">
+  <div style="background:#fff;border-radius:18px;width:100%;max-width:500px;padding:36px;position:relative;box-shadow:0 24px 60px rgba(0,0,0,.2);">
+    <button onclick="closeRLRequest()" style="position:absolute;top:14px;right:14px;background:var(--gray-light);border:none;color:var(--gray);width:30px;height:30px;border-radius:8px;cursor:pointer;font-size:16px;font-family:inherit;display:flex;align-items:center;justify-content:center;">&#x2715;</button>
+    <h3 id="rlModalTitle" style="font-size:20px;font-weight:800;color:var(--dark);margin-bottom:6px;letter-spacing:-.4px;"></h3>
+    <p style="font-size:13.5px;color:var(--gray);margin-bottom:24px;">Fill in your details and our team will contact you within 24 hours.</p>
+    <div style="display:flex;flex-direction:column;gap:12px;">
+      <input id="rlName" type="text" placeholder="Full name" style="width:100%;padding:11px 14px;border:1.5px solid var(--border);border-radius:9px;font-size:14px;font-family:inherit;outline:none;transition:border-color .2s;" onfocus="this.style.borderColor='var(--blue)'" onblur="this.style.borderColor='var(--border)'">
+      <input id="rlEmail" type="email" placeholder="Email address" style="width:100%;padding:11px 14px;border:1.5px solid var(--border);border-radius:9px;font-size:14px;font-family:inherit;outline:none;transition:border-color .2s;" onfocus="this.style.borderColor='var(--blue)'" onblur="this.style.borderColor='var(--border)'">
+      <input id="rlPhone" type="tel" placeholder="Phone / WhatsApp (optional)" style="width:100%;padding:11px 14px;border:1.5px solid var(--border);border-radius:9px;font-size:14px;font-family:inherit;outline:none;transition:border-color .2s;" onfocus="this.style.borderColor='var(--blue)'" onblur="this.style.borderColor='var(--border)'">
+      <textarea id="rlMessage" placeholder="Any specific customisation requirements?" style="width:100%;padding:11px 14px;border:1.5px solid var(--border);border-radius:9px;font-size:14px;font-family:inherit;outline:none;min-height:90px;resize:vertical;transition:border-color .2s;" onfocus="this.style.borderColor='var(--blue)'" onblur="this.style.borderColor='var(--border)'"></textarea>
+    </div>
+    <button onclick="submitRLRequest()" style="width:100%;margin-top:18px;padding:13px;background:var(--blue);color:white;border:none;border-radius:9px;font-family:var(--font-head);font-size:14.5px;font-weight:700;cursor:pointer;transition:background .18s;" onmouseover="this.style.background='var(--blue2)'" onmouseout="this.style.background='var(--blue)'">Submit Request</button>
+    <p style="font-size:11.5px;color:var(--gray);text-align:center;margin-top:12px;">We respond within 24 hours · info@mbdtechltd.com</p>
+  </div>
+</div>
+</div><!-- /page-readylaunch -->
+<div class="page" id="page-listingdetail">
+  <section style="background:#F8FAFC;padding:70px 24px;">
+    <div class="container">
+      <div id="listingDetailPage"></div>
+    </div>
+  </section>
+</div><!-- /page-listingdetail -->
+
+
+<!-- ========== BLOG PAGE ========== -->
+<div class="page" id="page-blog">
+<section style="background:linear-gradient(135deg,var(--blue),var(--blue2));padding:80px 32px;text-align:center;color:white;">
+  <div class="container"><h1 class="section-title" style="color:white;">Blog & Knowledge Hub</h1><p class="section-sub" style="color:rgba(255,255,255,0.75);margin:16px auto 0;">Expert insights on app development, AI, SaaS, startups, and digital product strategy.</p></div>
+</section>
+<section>
+  <div class="container">
+    <div class="portfolio-filters"><button class="filter-btn blog-filter-btn active" data-cat="all">All</button><button class="filter-btn blog-filter-btn" data-cat="app-dev">App Development</button><button class="filter-btn blog-filter-btn" data-cat="ai">AI Technology</button><button class="filter-btn blog-filter-btn" data-cat="saas">SaaS</button><button class="filter-btn blog-filter-btn" data-cat="startup">Startup Ideas</button><button class="filter-btn blog-filter-btn" data-cat="monetization">Monetization</button><button class="filter-btn blog-filter-btn" data-cat="uiux">UI/UX</button></div>
+    <div class="blog-grid" id="publicBlogGrid">
+      <div class="blog-card">
+        <div class="blog-body">
+          <h3>Loading articles...</h3>
+          <p>Please wait while we load the latest MBDTECH LTD articles.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ========== ABOUT PAGE ========== -->
+<div class="page" id="page-about">
+<div class="about-hero">
+  <div class="container"><h1>We Build Digital Products <br>That Matter</h1><p>MBDTECH LTD is a globally trusted software development company specializing in mobile apps, web applications, SaaS platforms, and AI-powered digital products.</p></div>
+</div>
+<section>
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;">
+      <div><div class="section-label"><span></span>Our Story</div><h2 class="section-title" style="font-size:36px;">Building the Future,<br>One Product at a Time</h2><p style="font-size:16px;color:var(--gray);line-height:1.8;margin-top:16px;">Founded by a team of passionate developers and designers, MBDTECH LTD has grown into a full-service digital product agency trusted by startups and enterprises across the globe. We combine technical excellence with strategic thinking to build products that grow businesses.</p><p style="font-size:16px;color:var(--gray);line-height:1.8;margin-top:16px;">From our first mobile app to our 500th delivery, our mission has stayed the same: build products that users love and businesses rely on.</p></div>
+      <div style="background:var(--blue-light);border-radius:20px;padding:40px;">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+          <div style="text-align:center;background:white;border-radius:14px;padding:20px;"><div style="font-family:var(--font-head);font-size:36px;font-weight:800;color:var(--blue);">2018</div><div style="color:var(--gray);font-size:14px;">Founded</div></div>
+          <div style="text-align:center;background:white;border-radius:14px;padding:20px;"><div style="font-family:var(--font-head);font-size:36px;font-weight:800;color:var(--blue);">500+</div><div style="color:var(--gray);font-size:14px;">Projects</div></div>
+          <div style="text-align:center;background:white;border-radius:14px;padding:20px;"><div style="font-family:var(--font-head);font-size:36px;font-weight:800;color:var(--blue);">50+</div><div style="color:var(--gray);font-size:14px;">Team Members</div></div>
+          <div style="text-align:center;background:white;border-radius:14px;padding:20px;"><div style="font-family:var(--font-head);font-size:36px;font-weight:800;color:var(--blue);">30+</div><div style="color:var(--gray);font-size:14px;">Countries Served</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="background:var(--gray-light);">
+  <div class="container">
+    <div class="section-label"><span></span>Our Values</div>
+    <h2 class="section-title">What Drives Us</h2>
+    <div class="values-grid mt-8">
+      <div class="value-card"><div class="value-icon"><svg viewBox="0 0 24 24" width="26" height="26" stroke="var(--blue2)" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div><h3>Client-First Mindset</h3><p>Every decision we make is filtered through one question: does this serve our client's success?</p></div>
+      <div class="value-card"><div class="value-icon"><svg viewBox="0 0 24 24" width="26" height="26" stroke="var(--blue2)" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></div><h3>Technical Excellence</h3><p>We never cut corners. Clean code, proper architecture, and rigorous testing are non-negotiable.</p></div>
+      <div class="value-card"><div class="value-icon"><svg viewBox="0 0 24 24" width="26" height="26" stroke="var(--blue2)" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div><h3>Transparency</h3><p>Weekly reports, open communication, and honest timelines — no surprises, ever.</p></div>
+      <div class="value-card"><div class="value-icon"><svg viewBox="0 0 24 24" width="26" height="26" stroke="var(--blue2)" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></div><h3>Continuous Innovation</h3><p>We stay ahead of the curve, adopting AI, new frameworks, and best practices before they become mainstream.</p></div>
+    </div>
+  </div>
+</section>
+<section class="cta-banner"><div class="container"><h2>Join 200+ Happy Clients</h2><p>Partner with a team that treats your project like their own.</p><div class="cta-actions"><button class="btn btn-white btn-xl" onclick="showPage('start')">Start a Project</button><button class="btn btn-outline btn-xl" style="border-color:rgba(255,255,255,0.3);color:white;" onclick="showPage('contact')">Get in Touch</button></div></div></section>
+</div>
+
+<!-- ========== START A PROJECT PAGE ========== -->
+<div class="page" id="page-start">
+<section style="background:linear-gradient(135deg,var(--blue),var(--blue2));padding:80px 32px;text-align:center;color:white;">
+  <div class="container"><h1 class="section-title" style="color:white;">Start Your Project</h1><p class="section-sub" style="color:rgba(255,255,255,0.75);margin:16px auto 0;">Fill out this quick form and we'll get back to you with a proposal within 24 hours.</p></div>
+</section>
+<section>
+  <div class="container">
+    <div class="step-form">
+      <!-- Step Indicator -->
+      <div class="step-indicator">
+        <div class="step-dot active" id="sdot1">1</div><div class="step-line" id="sline1"></div>
+        <div class="step-dot" id="sdot2">2</div><div class="step-line" id="sline2"></div>
+        <div class="step-dot" id="sdot3">3</div><div class="step-line" id="sline3"></div>
+        <div class="step-dot" id="sdot4">4</div><div class="step-line" id="sline4"></div>
+        <div class="step-dot" id="sdot5">5</div><div class="step-line" id="sline5"></div>
+        <div class="step-dot" id="sdot6">6</div>
+      </div>
+      <!-- Step 1 -->
+      <div class="step-content active" id="step1">
+        <h3 class="step-title">What would you like to build?</h3>
+        <p class="step-sub">Select your project type</p>
+        <div class="option-grid">
+          <div class="option-card" onclick="selectOption(this,'step1')"><div class="option-icon"><svg viewBox="0 0 24 24" width="24" height="24" stroke="var(--blue2)" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/></svg></div><div class="option-label">Mobile App</div></div>
+          <div class="option-card" onclick="selectOption(this,'step1')"><div class="option-icon"><svg viewBox="0 0 24 24" width="24" height="24" stroke="var(--blue2)" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/></svg></div><div class="option-label">Website</div></div>
+          <div class="option-card" onclick="selectOption(this,'step1')"><div class="option-icon"><svg viewBox="0 0 24 24" width="24" height="24" stroke="var(--blue2)" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div><div class="option-label">Web App</div></div>
+          <div class="option-card" onclick="selectOption(this,'step1')"><div class="option-icon"><svg viewBox="0 0 24 24" width="24" height="24" stroke="var(--blue2)" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="6"/><line x1="6" y1="12" x2="10" y2="12"/><line x1="8" y1="10" x2="8" y2="14"/></svg></div><div class="option-label">Game</div></div>
+          <div class="option-card" onclick="selectOption(this,'step1')"><div class="option-icon"><svg viewBox="0 0 24 24" width="24" height="24" stroke="var(--blue2)" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg></div><div class="option-label">SaaS</div></div>
+          <div class="option-card" onclick="selectOption(this,'step1')"><div class="option-icon"><svg viewBox="0 0 24 24" width="24" height="24" stroke="var(--blue2)" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5M2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div><div class="option-label">AI Tool</div></div>
+          <div class="option-card" onclick="selectOption(this,'step1')"><div class="option-icon"><svg viewBox="0 0 24 24" width="24" height="24" stroke="var(--blue2)" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></div><div class="option-label">Marketplace</div></div>
+          <div class="option-card" onclick="selectOption(this,'step1')"><div class="option-icon"><svg viewBox="0 0 24 24" width="24" height="24" stroke="var(--blue2)" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg></div><div class="option-label">Other</div></div>
+        </div>
+        <div class="step-nav"><div></div><button class="btn btn-primary btn-lg" onclick="nextStep(2)">Next: Platform →</button></div>
+      </div>
+      <!-- Step 2 -->
+      <div class="step-content" id="step2">
+        <h3 class="step-title">Which platform?</h3>
+        <p class="step-sub">Choose your target platform</p>
+        <div class="option-grid">
+          <div class="option-card" onclick="selectOption(this,'step2')"><div class="option-icon"><svg viewBox="0 0 24 24" width="24" height="24" stroke="var(--blue2)" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5M2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div><div class="option-label">Android</div></div>
+          <div class="option-card" onclick="selectOption(this,'step2')"><div class="option-icon"><svg viewBox="0 0 24 24" width="24" height="24" stroke="var(--blue2)" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/></svg></div><div class="option-label">iOS</div></div>
+          <div class="option-card" onclick="selectOption(this,'step2')"><div class="option-icon"><svg viewBox="0 0 24 24" width="24" height="24" stroke="var(--blue2)" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/></svg></div><div class="option-label">Web</div></div>
+          <div class="option-card" onclick="selectOption(this,'step2')"><div class="option-icon"><svg viewBox="0 0 24 24" width="24" height="24" stroke="var(--blue2)" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/></svg></div><div class="option-label">Android + iOS</div></div>
+          <div class="option-card" onclick="selectOption(this,'step2')"><div class="option-icon"><svg viewBox="0 0 24 24" width="24" height="24" stroke="var(--blue2)" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg></div><div class="option-label">Cross Platform</div></div>
+        </div>
+        <div class="step-nav"><button class="btn btn-outline btn-lg" onclick="nextStep(1)">← Back</button><button class="btn btn-primary btn-lg" onclick="nextStep(3)">Next: Features →</button></div>
+      </div>
+      <!-- Step 3 -->
+      <div class="step-content" id="step3">
+        <h3 class="step-title">Required features?</h3>
+        <p class="step-sub">Select all that apply</p>
+        <div class="feature-grid">
+          <div class="feature-option" onclick="this.classList.toggle('selected');toggleCheck(this)"><div class="feature-checkbox">✓</div><span style="font-size:14px;">Login / Auth</span></div>
+          <div class="feature-option" onclick="this.classList.toggle('selected');toggleCheck(this)"><div class="feature-checkbox">✓</div><span style="font-size:14px;">Admin Panel</span></div>
+          <div class="feature-option" onclick="this.classList.toggle('selected');toggleCheck(this)"><div class="feature-checkbox">✓</div><span style="font-size:14px;">Payment Gateway</span></div>
+          <div class="feature-option" onclick="this.classList.toggle('selected');toggleCheck(this)"><div class="feature-checkbox">✓</div><span style="font-size:14px;">In-App Chat</span></div>
+          <div class="feature-option" onclick="this.classList.toggle('selected');toggleCheck(this)"><div class="feature-checkbox">✓</div><span style="font-size:14px;">Push Notifications</span></div>
+          <div class="feature-option" onclick="this.classList.toggle('selected');toggleCheck(this)"><div class="feature-checkbox">✓</div><span style="font-size:14px;">Maps & Location</span></div>
+          <div class="feature-option" onclick="this.classList.toggle('selected');toggleCheck(this)"><div class="feature-checkbox">✓</div><span style="font-size:14px;">Booking System</span></div>
+          <div class="feature-option" onclick="this.classList.toggle('selected');toggleCheck(this)"><div class="feature-checkbox">✓</div><span style="font-size:14px;">AI Integration</span></div>
+          <div class="feature-option" onclick="this.classList.toggle('selected');toggleCheck(this)"><div class="feature-checkbox">✓</div><span style="font-size:14px;">Analytics</span></div>
+          <div class="feature-option" onclick="this.classList.toggle('selected');toggleCheck(this)"><div class="feature-checkbox">✓</div><span style="font-size:14px;">Monetization</span></div>
+          <div class="feature-option" onclick="this.classList.toggle('selected');toggleCheck(this)"><div class="feature-checkbox">✓</div><span style="font-size:14px;">API Integration</span></div>
+        </div>
+        <div class="step-nav"><button class="btn btn-outline btn-lg" onclick="nextStep(2)">← Back</button><button class="btn btn-primary btn-lg" onclick="nextStep(4)">Next: Budget →</button></div>
+      </div>
+      <!-- Step 4 -->
+      <div class="step-content" id="step4">
+        <h3 class="step-title">What's your budget?</h3>
+        <p class="step-sub">Select your investment range</p>
+        <div class="option-grid" style="grid-template-columns:repeat(2,1fr);">
+          <div class="option-card" onclick="selectOption(this,'step4')"><div class="option-icon"><svg viewBox="0 0 24 24" width="24" height="24" stroke="var(--blue2)" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div><div class="option-label">Basic<br><small style="color:var(--gray);font-weight:400;">$100–$300</small></div></div>
+          <div class="option-card" onclick="selectOption(this,'step4')"><div class="option-icon"><svg viewBox="0 0 24 24" width="24" height="24" stroke="var(--blue2)" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg></div><div class="option-label">Standard<br><small style="color:var(--gray);font-weight:400;">$500–$1,000</small></div></div>
+          <div class="option-card" onclick="selectOption(this,'step4')"><div class="option-icon"><svg viewBox="0 0 24 24" width="24" height="24" stroke="var(--blue2)" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div><div class="option-label">Premium<br><small style="color:var(--gray);font-weight:400;">$1,000–$2,000</small></div></div>
+          <div class="option-card" onclick="selectOption(this,'step4')"><div class="option-icon"><svg viewBox="0 0 24 24" width="24" height="24" stroke="var(--blue2)" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></div><div class="option-label">Enterprise<br><small style="color:var(--gray);font-weight:400;">$2,000–$5,000+</small></div></div>
+        </div>
+        <div class="step-nav"><button class="btn btn-outline btn-lg" onclick="nextStep(3)">← Back</button><button class="btn btn-primary btn-lg" onclick="nextStep(5)">Next: Timeline →</button></div>
+      </div>
+      <!-- Step 5 -->
+      <div class="step-content" id="step5">
+        <h3 class="step-title">What's your timeline?</h3>
+        <p class="step-sub">When do you need this delivered?</p>
+        <div class="option-grid" style="grid-template-columns:repeat(auto-fill,minmax(180px,1fr));">
+          <div class="option-card" onclick="selectOption(this,'step5')"><div class="option-icon"><svg viewBox="0 0 24 24" width="24" height="24" stroke="var(--blue2)" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div><div class="option-label">Urgent<br><small style="color:var(--gray);font-weight:400;">ASAP</small></div></div>
+          <div class="option-card" onclick="selectOption(this,'step5')"><div class="option-icon"><svg viewBox="0 0 24 24" width="24" height="24" stroke="var(--blue2)" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div><div class="option-label">1 Month</div></div>
+          <div class="option-card" onclick="selectOption(this,'step5')"><div class="option-icon"><svg viewBox="0 0 24 24" width="24" height="24" stroke="var(--blue2)" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="8" y1="14" x2="16" y2="14"/></svg></div><div class="option-label">2–3 Months</div></div>
+          <div class="option-card" onclick="selectOption(this,'step5')"><div class="option-icon"><svg viewBox="0 0 24 24" width="24" height="24" stroke="var(--blue2)" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg></div><div class="option-label">Flexible</div></div>
+        </div>
+        <div class="step-nav"><button class="btn btn-outline btn-lg" onclick="nextStep(4)">← Back</button><button class="btn btn-primary btn-lg" onclick="nextStep(6)">Next: Contact →</button></div>
+      </div>
+      <!-- Step 6 -->
+      <div class="step-content" id="step6">
+
+      <div class="mbd-urgent-start-box" style="background:#F0FDF4;border:1px solid #BBF7D0;border-radius:18px;padding:18px;margin:22px 0;box-shadow:0 8px 22px rgba(15,23,42,.06);">
+        <h3 style="margin:0 0 8px;color:#0F172A;font-size:20px;">Need a Faster Reply?</h3>
+        <p style="margin:0 0 14px;color:#475569;line-height:1.6;">If your project is urgent or you want a faster response before submitting the full brief, contact MBDTECH LTD directly.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:10px;">
+          <a href="https://wa.me/447462059140" target="_blank" rel="noopener" style="background:#2563EB;color:white;padding:10px 14px;border-radius:999px;text-decoration:none;font-weight:700;">WhatsApp</a>
+          <a href="https://t.me/Mbdtech_Ltd" target="_blank" rel="noopener" style="background:#2563EB;color:white;padding:10px 14px;border-radius:999px;text-decoration:none;font-weight:700;">Telegram</a>
+          <a href="mailto:mbdtechltd.uk@gmail.com" style="background:#0F172A;color:white;padding:10px 14px;border-radius:999px;text-decoration:none;font-weight:700;">Email</a>
+        </div>
+      </div>
+
+        <h3 class="step-title">Your contact details</h3>
+        <p class="step-sub">We'll reach out with a custom proposal within 24 hours.</p>
+        <div class="form-box">
+          <div class="form-row"><div class="form-group"><label class="form-label">Full Name *</label><input class="form-input" placeholder="Your full name" type="text"></div><div class="form-group"><label class="form-label">Email Address *</label><input class="form-input" placeholder="your@email.com" type="email"></div></div>
+          <div class="form-row"><div class="form-group"><label class="form-label">Phone Number</label><input class="form-input" placeholder="+44 7462 059140" type="tel"></div><div class="form-group"><label class="form-label">WhatsApp</label><input class="form-input" placeholder="+44 7462 059140" type="tel"></div></div>
+          <div class="form-group"><label class="form-label">Project Description</label><textarea class="form-input" placeholder="Tell us more about your project idea, goals, and any specific requirements..."></textarea></div>
+          <div class="form-group"><label class="form-label">Attach Files (Optional)</label><input class="form-input" type="file" style="padding:10px;"></div>
+        </div>
+        <div class="step-nav"><button class="btn btn-outline btn-lg" onclick="nextStep(5)">← Back</button><button class="btn btn-primary btn-xl" onclick="submitProject()">Submit Project Brief</button></div>
+      </div>
+      <!-- Success -->
+      <div class="step-content" id="stepSuccess" style="text-align:center;padding:60px 20px;">
+        <div style="width:64px;height:64px;background:var(--blue-light);border-radius:16px;display:flex;align-items:center;justify-content:center;margin:0 auto 24px"><svg viewBox="0 0 24 24" width="32" height="32" stroke="var(--blue)" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <h3 style="font-size:32px;font-weight:800;margin-bottom:12px;">Project Brief Submitted!</h3>
+        <p style="font-size:18px;color:var(--gray);margin-bottom:32px;max-width:480px;margin-left:auto;margin-right:auto;">Thank you! Our team will review your brief and send you a custom proposal within 24 hours. Check your email for confirmation.</p>
+        <div class="flex justify-center gap-3 flex-wrap"><button class="btn btn-primary btn-lg" onclick="showPage('home')">Back to Home</button><button class="btn btn-outline btn-lg" onclick="toggleChat()">AI Consultant</button></div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- ========== CONTACT PAGE ========== -->
+<div class="page" id="page-contact">
+<section style="background:linear-gradient(135deg,var(--blue),var(--blue2));padding:80px 32px;text-align:center;color:white;">
+  <div class="container"><h1 class="section-title" style="color:white;">Get in Touch</h1><p class="section-sub" style="color:rgba(255,255,255,0.75);margin:16px auto 0;">Ready to discuss your project? Reach out through any channel below.</p></div>
+</section>
+<section>
+  <div class="container">
+
+    <div class="mbd-urgent-contact-box" style="background:#F0FDF4;border:1px solid #BBF7D0;border-radius:18px;padding:18px;margin:22px 0;box-shadow:0 8px 22px rgba(15,23,42,.06);">
+      <h3 style="margin:0 0 8px;color:#0F172A;font-size:20px;">Need a Faster Reply?</h3>
+      <p style="margin:0 0 14px;color:#475569;line-height:1.6;">For urgent project requests, app purchase inquiries, ownership transfer, deployment support, or payment questions, contact MBDTECH LTD directly.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:10px;">
+        <a href="https://wa.me/447462059140" target="_blank" rel="noopener" style="background:#2563EB;color:white;padding:10px 14px;border-radius:999px;text-decoration:none;font-weight:700;">WhatsApp</a>
+        <a href="https://t.me/Mbdtech_Ltd" target="_blank" rel="noopener" style="background:#2563EB;color:white;padding:10px 14px;border-radius:999px;text-decoration:none;font-weight:700;">Telegram</a>
+        <a href="mailto:mbdtechltd.uk@gmail.com" style="background:#0F172A;color:white;padding:10px 14px;border-radius:999px;text-decoration:none;font-weight:700;">Email</a>
+      </div>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>Contact MBDTECH LTD</h3>
+        <div class="contact-items">
+          <div class="contact-item"><div class="contact-item-icon"><svg viewBox="0 0 24 24" width="20" height="20" stroke="var(--blue2)" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div><h4>Email Us</h4><p>info@mbdtechltd.com</p></div></div>
+          <div class="contact-item"><div class="contact-item-icon"><svg viewBox="0 0 24 24" width="20" height="20" stroke="var(--blue2)" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.5 19.79 19.79 0 0 1 1.61 4.94C1.6 3.93 2.34 3.07 3.34 3h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 10.09a16 16 0 0 0 6 6"/></svg></div><div><h4>Call Us</h4><p>+44 7462 059140<br>Mon–Fri, 9AM–6PM</p></div></div>
+          <div class="contact-item"><div class="contact-item-icon"><svg viewBox="0 0 24 24" width="20" height="20" stroke="var(--blue2)" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><h4>Our Location</h4><p>MBDTECH LTD<br>United Kingdom</p></div></div>
+          <div class="contact-item"><div class="contact-item-icon"><svg viewBox="0 0 24 24" width="20" height="20" stroke="var(--blue2)" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><div><h4>Response Time</h4><p>We will contact you within 24 hours.</p></div></div>
+        </div>
+        <a class="whatsapp-btn" href="https://wa.me/447462059140" target="_blank" rel="noopener">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Chat on WhatsApp
+        </a>
+      </div>
+      <div class="form-box">
+        <h3 style="font-size:20px;font-weight:800;margin-bottom:24px;">Send Us a Message</h3>
+        <div class="form-row"><div class="form-group"><label class="form-label">Full Name *</label><input class="form-input" placeholder="Your name" type="text"></div><div class="form-group"><label class="form-label">Email *</label><input class="form-input" placeholder="your@email.com" type="email"></div></div>
+        <div class="form-group"><label class="form-label">Subject</label><input class="form-input" placeholder="What's this about?" type="text"></div>
+        <div class="form-group"><label class="form-label">Message *</label><textarea class="form-input" placeholder="Tell us about your project or question..." style="min-height:160px;"></textarea></div>
+        <button class="btn btn-primary btn-lg" style="width:100%;justify-content:center;">Send Message →</button>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="logo" onclick="showPage('home')" style="margin-bottom:4px;display:flex;">
+          <div class="logo-icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="white" stroke-width="2" fill="none"/></svg></div>
+          <span class="logo-text" style="color:white;">MBD<span style="color:#7db4f5;">TECH</span> LTD</span>
+        </a>
+        <p>Your end-to-end digital product partner. We design, develop, launch, and grow mobile apps, web applications, SaaS platforms, and AI-powered products.</p>
+        <div class="social-links mt-6">
+          <a class="social-link">in</a>
+          <a class="social-link">𝕏</a>
+          <a class="social-link" href="https://facebook.com/mbdtechltd" target="_blank" rel="noopener" title="Facebook">f</a>
+          <a class="social-link" href="https://youtube.com/@mbdtechltd" target="_blank" rel="noopener" title="YouTube">▶</a>
+        </div>
+      </div>
+      <div class="footer-col"><h4>Services</h4><ul><li><a onclick="showPage('services')">Mobile App Development</a></li><li><a onclick="showPage('services')">Web Application</a></li><li><a onclick="showPage('services')">UI/UX Design</a></li><li><a onclick="showPage('services')">Game Development</a></li><li><a onclick="showPage('services')">App Marketing</a></li><li><a onclick="showPage('services')">App Monetization</a></li></ul></div>
+      <div class="footer-col"><h4>Company</h4><ul><li><a onclick="showPage('about')">About Us</a></li><li><a onclick="showPage('portfolio')">Portfolio</a></li><li><a onclick="showPage('blog')">Blog</a></li><li><a onclick="showPage('marketplace')">Marketplace</a></li><li><a onclick="showPage('ai')">AI Features</a></li><li><a onclick="showPage('contact')">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Get Started</h4><ul><li><a onclick="showPage('start')">Start a Project</a></li><li><a href="estimator.html">Cost Estimator</a></li><li><a href="portal/login.html">Client Portal</a></li><li><a onclick="toggleChat()">Talk to AI</a></li><li><a onclick="showPage('contact')">Free Consultation</a></li><li><a onclick="showPage('marketplace')">Buy Templates</a></li><li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="terms-and-conditions.html">Terms & Conditions</a></li><li><a href="cookie-policy.html">Cookie Policy</a></li><li><a href="sitemap.html">Sitemap</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 MBDTECH LTD. All rights reserved.</span>
+      <span>info@mbdtechltd.com</span>
+    </div>
+  </div>
+</footer>
+
+<!-- AI CONSULTANT PANEL -->
+<div class="chat-trigger">
+  <div class="chat-panel" id="chatPanel">
+    <!-- Header -->
+    <div class="chat-header">
+      <div class="chat-header-info">
+        <div class="chat-hd-logo">
+          <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        </div>
+        <div class="chat-header-text">
+          <h4>MBDTECH AI Consultant</h4>
+          <p><span class="online-dot"></span>Available · Responds instantly</p>
+        </div>
+      </div>
+      <button class="chat-close" onclick="toggleChat()">
+        <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <!-- Scope notice -->
+    <div class="chat-scope">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+      This assistant handles MBDTECH LTD service enquiries only
+    </div>
+    <!-- Messages -->
+    <div class="chat-messages" id="chatMessages">
+      <div class="chat-msg bot">
+        <div class="ai-label">AI CONSULTANT</div>
+        <div class="bubble">Good day. I'm the MBDTECH LTD AI Consultant.<br><br>I can assist you with service enquiries, project scoping, cost estimation, portfolio information, or connecting you with our team. How may I help you?</div>
+      </div>
+    </div>
+    <!-- Quick actions -->
+    <div class="chat-quick">
+      <div class="quick-label">Select an option</div>
+      <div class="quick-options" id="chatQuickOpts">
+        <button class="quick-opt" onclick="sendQuick('mobile')">
+          <svg viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+          Mobile App Development
+        </button>
+        <button class="quick-opt" onclick="sendQuick('web')">
+          <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          Website or Web Application
+        </button>
+        <button class="quick-opt" onclick="sendQuick('estimate')">
+          <svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          Project Cost Estimation
+        </button>
+        <button class="quick-opt" onclick="sendQuick('portfolio')">
+          <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+          Portfolio &amp; Case Studies
+        </button>
+        <button class="quick-opt" onclick="sendQuick('contact')">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.5 19.79 19.79 0 0 1 1.61 4.94C1.6 3.93 2.34 3.07 3.34 3h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 10.09a16 16 0 0 0 6 6"/></svg>
+          Contact the Team
+        </button>
+      </div>
+    </div>
+    <!-- Input -->
+    <div class="chat-input-row">
+      <textarea class="chat-input" id="chatInput" placeholder="Type your enquiry here..." rows="1" onkeydown="if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();sendChat();}"></textarea>
+      <button class="chat-send" onclick="sendChat()">
+        <svg viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+      </button>
+    </div>
+    <div class="chat-footnote">MBDTECH LTD · UK Registered IT Company · info@mbdtechltd.com</div>
+  </div>
+  <!-- Trigger button — no emoji, professional -->
+  <button class="chat-btn" onclick="toggleChat()">
+    <span class="chat-btn-dot"></span>
+    <span>AI Consultant</span>
+    <span class="chat-btn-mark">
+      <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+    </span>
+  </button>
+</div>
+
+
+  <!-- ── SCRIPTS ───────────────────────────────────────── -->
+  <script src="js/main.js" defer></script>
+
+<div id="mbd-cookie-banner" style="position:fixed;left:18px;right:18px;bottom:18px;z-index:99999;background:#0F172A;color:#fff;border:1px solid rgba(255,255,255,.14);border-radius:18px;padding:18px;box-shadow:0 20px 60px rgba(0,0,0,.25);display:none;max-width:980px;margin:0 auto;">
+  <div style="display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap;">
+    <div style="max-width:680px;">
+      <strong style="font-size:16px;">We use cookies</strong>
+      <p style="margin:6px 0 0;color:#CBD5E1;line-height:1.6;font-size:14px;">We use essential, analytics and advertising cookies to improve your experience and measure website performance. Read our <a href="/cookie-policy.html" style="color:#93C5FD;font-weight:800;">Cookie Policy</a>.</p>
+    </div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;">
+      <button id="mbd-cookie-decline" style="border:1px solid rgba(255,255,255,.25);background:transparent;color:#fff;padding:10px 14px;border-radius:999px;font-weight:800;cursor:pointer;">Decline</button>
+      <button id="mbd-cookie-accept" style="border:0;background:#2563EB;color:#fff;padding:10px 16px;border-radius:999px;font-weight:900;cursor:pointer;">Accept</button>
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  try {
+    var key = 'mbd_cookie_consent';
+    var banner = document.getElementById('mbd-cookie-banner');
+    if (!banner) return;
+    if (!localStorage.getItem(key)) banner.style.display = 'block';
+
+    function saveConsent(value){
+      localStorage.setItem(key, value);
+      banner.style.display = 'none';
+    }
+
+    var accept = document.getElementById('mbd-cookie-accept');
+    var decline = document.getElementById('mbd-cookie-decline');
+    if (accept) accept.onclick = function(){ saveConsent('accepted'); };
+    if (decline) decline.onclick = function(){ saveConsent('declined'); };
+  } catch(e) {}
+})();
+</script>
+
+</body>
+</html>

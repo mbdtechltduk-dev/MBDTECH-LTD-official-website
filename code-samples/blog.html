@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MBDTECH LTD Blog</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+body{background:#f8fafc;margin:0;font-family:Inter,Arial,sans-serif;color:#0f172a}
+.wrap{max-width:980px;margin:auto;padding:48px 20px}
+.article{background:#fff;border:1px solid #e5e7eb;border-radius:24px;padding:34px;box-shadow:0 10px 30px rgba(15,23,42,.06)}
+.article img{width:100%;border-radius:18px;margin:20px 0;max-height:460px;object-fit:cover}
+.meta{color:#64748b;font-size:14px;margin:8px 0 18px}
+.content{line-height:1.8;font-size:17px;color:#1f2937}
+.content h2{margin-top:30px;color:#0f172a}
+.back{display:inline-flex;margin-bottom:18px;color:#2563eb;text-decoration:none;font-weight:700}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.card{background:#fff;border:1px solid #e5e7eb;border-radius:20px;padding:20px;box-shadow:0 8px 24px rgba(15,23,42,.05)}
+.card img{width:100%;height:180px;object-fit:cover;border-radius:14px;margin-bottom:12px}
+.btn{display:inline-flex;padding:10px 15px;border-radius:12px;background:#2563eb;color:#fff;text-decoration:none;font-weight:700}
+</style>
+</head>
+<body>
+<div class="wrap">
+<a class="back" href="/">← Back to MBDTECH LTD</a>
+<div id="blogRoot">Loading...</div>
+</div>
+
+<script>
+
+function renderArticleContent(text){
+  if(!text) return '';
+  let html = text
+    .replace(/^### (.*$)/gim, '<h3>$1</h3>')
+    .replace(/^## (.*$)/gim, '<h2>$1</h2>')
+    .replace(/^# (.*$)/gim, '<h1>$1</h1>')
+    .replace(/^> (.*$)/gim, '<blockquote>$1</blockquote>')
+    .replace(/^\* (.*$)/gim, '<li>$1</li>')
+    .replace(/^- (.*$)/gim, '<li>$1</li>')
+    .replace(/\*\*(.*?)\*\*/gim, '<strong>$1</strong>')
+    .replace(/\*(.*?)\*/gim, '<em>$1</em>')
+    .replace(/\n\n/gim, '</p><p>');
+
+  html = '<p>' + html + '</p>';
+  html = html.replace(/<p><h/g, '<h').replace(/<\/h([1-3])><\/p>/g, '</h$1>');
+  html = html.replace(/<p><li>/g, '<ul><li>').replace(/<\/li><\/p>/g, '</li></ul>');
+  return html;
+}
+
+async function loadBlogPage(){
+  const root=document.getElementById('blogRoot');
+  const slug=new URLSearchParams(location.search).get('slug');
+
+  try{
+    const r=await fetch('/api/public/blog');
+    const d=await r.json();
+    const posts=d.posts || [];
+
+    if(slug){
+      const p=posts.find(x=>x.slug===slug);
+      if(!p){ root.innerHTML='<div class="article"><h1>Article not found</h1></div>'; return; }
+
+      document.title=(p.seo_title || p.title || 'Article') + ' | MBDTECH LTD';
+
+      root.innerHTML=`
+        <article class="article">
+          <h1>${p.title || 'Untitled Article'}</h1>
+          <div class="meta">${p.category || 'Blog'} · ${p.published_at ? new Date(p.published_at).toLocaleDateString() : ''} · ${p.author || 'MBDTECH LTD'}</div>
+          ${p.cover_image_url ? `<img src="${p.cover_image_url}" alt="${p.title || ''}">` : ''}
+          <div class="content">${renderArticleContent(p.content || p.excerpt || '')}</div>
+        </article>
+      `;
+      return;
+    }
+
+    root.innerHTML=`
+      <h1>MBDTECH LTD Blog</h1>
+      <p class="meta">Latest articles, technology insights, AI, SaaS, app development, and business growth.</p>
+      <div class="grid">
+        ${posts.map(p=>`
+          <div class="card">
+            ${p.cover_image_url ? `<img src="${p.cover_image_url}" alt="${p.title || ''}">` : ''}
+            <h3>${p.title || 'Untitled'}</h3>
+            <p class="meta">${p.category || 'Blog'} · ${p.published_at ? new Date(p.published_at).toLocaleDateString() : ''}</p>
+            <p>${p.excerpt || p.seo_description || ''}</p>
+            <a class="btn" href="/blog.html?slug=${encodeURIComponent(p.slug)}">Read Article</a>
+          </div>
+        `).join('')}
+      </div>
+    `;
+  }catch(e){
+    root.innerHTML='<div class="article"><h1>Unable to load articles</h1></div>';
+  }
+}
+loadBlogPage();
+</script>
+</body>
+</html>
